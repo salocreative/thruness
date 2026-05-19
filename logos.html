@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logos — Thruness Brand Guidelines</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .logo-item { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+    .logo-preview { height: 180px; display: flex; align-items: center; justify-content: center; padding: 32px; }
+    .logo-preview img { max-height: 100%; max-width: 100%; object-fit: contain; }
+    .logo-info { background: var(--white); padding: 14px 18px; border-top: 1px solid var(--border); }
+    .logo-name { font-size: 13px; font-weight: 700; color: var(--near-black); margin-bottom: 2px; }
+    .logo-usage { font-size: 12px; color: var(--mid-grey); margin-bottom: 8px; }
+    .logo-links { display: flex; gap: 10px; }
+    .logo-links a { font-size: 11px; font-weight: 700; color: var(--purple-mid); text-decoration: none; padding: 3px 8px; background: var(--purple-tint); border-radius: 4px; }
+    .logo-links a:hover { background: var(--purple-tint-2); }
+    .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 480px; }
+    .profile-item { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+    .profile-preview { height: 160px; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .profile-preview img { width: 100px; height: 100px; border-radius: 22px; object-fit: cover; }
+    .profile-info { background: var(--white); padding: 12px 16px; border-top: 1px solid var(--border); }
+    .dont-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .dont-card { border: 1px solid var(--border); border-left: 3px solid #B33A22; border-radius: var(--radius); padding: 16px 20px; background: var(--white); }
+    .dont-title { font-size: 12px; font-weight: 700; color: #B33A22; margin-bottom: 5px; }
+    .dont-desc { font-size: 12px; color: var(--mid-grey); line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div id="mobileNavContainer"></div>
+  <div class="layout">
+    <div class="sidebar" id="sidebar"></div>
+    <main class="main">
+
+      <div class="page-header">
+        <div class="eyebrow">Identity</div>
+        <h1>Logos</h1>
+        <p class="intro">All variants, usage rules, clear space and download links. SVG files are the master source — use PNG for raster contexts only.</p>
+      </div>
+
+      <div class="content">
+
+        <div class="section">
+          <div class="section-label">Icon mark</div>
+          <div class="logo-grid">
+            <div class="logo-item">
+              <div class="logo-preview" style="background: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);">
+                <img src="logos/Thruness-Icon-Light.png" alt="Thruness icon on gradient">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Icon — On gradient</div>
+                <div class="logo-usage">App icon, splash screen, social profile</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Icon-Light.svg" download>SVG</a>
+                  <a href="logos/Thruness-Icon-Light.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--warm-white);">
+                <img src="logos/Thruness-Icon-Dark.png" alt="Thruness icon on light">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Icon — On light</div>
+                <div class="logo-usage">Documents, print, light UI contexts</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Icon-Dark.svg" download>SVG</a>
+                  <a href="logos/Thruness-Icon-Dark.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--near-black);">
+                <img src="logos/Thruness-Icon-Light.png" alt="Thruness icon on dark">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Icon — On dark</div>
+                <div class="logo-usage">Dark mode, app nav, night ride screen</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Icon-Light.svg" download>SVG</a>
+                  <a href="logos/Thruness-Icon-Light.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Landscape lockup</div>
+          <div class="logo-grid">
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--warm-white);">
+                <img src="logos/Thruness-Landscape-Dark.png" alt="Thruness landscape on light">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Landscape — On light</div>
+                <div class="logo-usage">Website header, email, documents, print</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Landscape-Dark.svg" download>SVG</a>
+                  <a href="logos/Thruness-Landscape-Dark.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--near-black);">
+                <img src="logos/Thruness-Landscape-Light.png" alt="Thruness landscape on dark">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Landscape — On dark</div>
+                <div class="logo-usage">Dark backgrounds, app onboarding, dark print stock</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Landscape-Light.svg" download>SVG</a>
+                  <a href="logos/Thruness-Landscape-Light.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Portrait lockup</div>
+          <div class="logo-grid">
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--warm-white);">
+                <img src="logos/Thruness-Portrait-Dark.png" alt="Thruness portrait on light">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Portrait — On light</div>
+                <div class="logo-usage">Posters, flyers, show vouchers, centred layouts</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Portrait-Dark.svg" download>SVG</a>
+                  <a href="logos/Thruness-Portrait-Dark.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--near-black);">
+                <img src="logos/Thruness-Portrait-Light.png" alt="Thruness portrait on dark">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Portrait — On dark</div>
+                <div class="logo-usage">Hero sections, launch screen, dark print</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Portrait-Light.svg" download>SVG</a>
+                  <a href="logos/Thruness-Portrait-Light.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Wordmark</div>
+          <div class="logo-grid">
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--warm-white);">
+                <img src="logos/Thruness-Wordmark-Dark.png" alt="Thruness wordmark on light">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Wordmark — On light</div>
+                <div class="logo-usage">Where the mark is already established in context</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Wordmark-Dark.svg" download>SVG</a>
+                  <a href="logos/Thruness-Wordmark-Dark.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+            <div class="logo-item">
+              <div class="logo-preview" style="background: var(--near-black);">
+                <img src="logos/Thruness-Wordmark-Light.png" alt="Thruness wordmark on dark">
+              </div>
+              <div class="logo-info">
+                <div class="logo-name">Wordmark — On dark</div>
+                <div class="logo-usage">Dark backgrounds, app footer, sidebar</div>
+                <div class="logo-links">
+                  <a href="logos/Thruness-Wordmark-Light.svg" download>SVG</a>
+                  <a href="logos/Thruness-Wordmark-Light.png" download>PNG</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Social profile images</div>
+          <div class="profile-grid">
+            <div class="profile-item">
+              <div class="profile-preview" style="background: var(--purple-tint);">
+                <img src="logos/Thruness-Profile-Purple.png" alt="Thruness purple profile">
+              </div>
+              <div class="profile-info">
+                <div class="logo-name">Profile — Purple</div>
+                <div class="logo-usage" style="margin-bottom:6px;">Instagram, LinkedIn, X</div>
+                <div class="logo-links"><a href="logos/Thruness-Profile-Purple.png" download>PNG 512px</a></div>
+              </div>
+            </div>
+            <div class="profile-item">
+              <div class="profile-preview" style="background: #e6f4ea;">
+                <img src="logos/Thruness-Profile-Green.png" alt="Thruness green profile">
+              </div>
+              <div class="profile-info">
+                <div class="logo-name">Profile — Green</div>
+                <div class="logo-usage" style="margin-bottom:6px;">Alternative social use</div>
+                <div class="logo-links"><a href="logos/Thruness-Profile-Green.png" download>PNG 512px</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Mark anatomy</div>
+          <div class="card" style="max-width: 520px;">
+            <div style="display:flex; justify-content:center; padding: 8px 0 20px;">
+              <svg width="320" height="170" viewBox="0 0 430 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M216.63 0C233.469 0.378693 250.095 11.4649 256.572 26.9746C267.614 51.8867 278.427 76.9067 289.006 102.029C307.866 147.738 349.356 184.408 399.623 197.184C409.508 199.74 419.676 201.406 430 202.135C419.678 202.865 409.234 202.588 398.848 201.273C346.048 195.007 296.079 159.767 272.181 109.679C260.224 85.1834 248.494 60.5843 237 35.8783C233.037 27.1827 224.415 21.8487 215 21.8817C205.585 21.8487 196.963 27.1827 193 35.8783C181.506 60.5843 169.776 85.1835 157.819 109.679C133.921 159.767 83.9525 195.007 31.1525 201.273C20.7661 202.588 10.3222 202.865 0 202.135C10.3237 201.406 20.4924 199.74 30.3767 197.184C80.6439 184.408 122.134 147.738 140.994 102.029C151.573 76.9067 162.386 51.8867 173.428 26.9746C179.905 11.4649 196.531 0.37869 213.37 0H216.63Z" fill="#4A2080" opacity="0.12"/>
+                <path d="M216.63 0C233.469 0.378693 250.095 11.4649 256.572 26.9746C267.614 51.8867 278.427 76.9067 289.006 102.029C307.866 147.738 349.356 184.408 399.623 197.184C409.508 199.74 419.676 201.406 430 202.135C419.678 202.865 409.234 202.588 398.848 201.273C346.048 195.007 296.079 159.767 272.181 109.679C260.224 85.1834 248.494 60.5843 237 35.8783C233.037 27.1827 224.415 21.8487 215 21.8817C205.585 21.8487 196.963 27.1827 193 35.8783C181.506 60.5843 169.776 85.1835 157.819 109.679C133.921 159.767 83.9525 195.007 31.1525 201.273C20.7661 202.588 10.3222 202.865 0 202.135C10.3237 201.406 20.4924 199.74 30.3767 197.184C80.6439 184.408 122.134 147.738 140.994 102.029C151.573 76.9067 162.386 51.8867 173.428 26.9746C179.905 11.4649 196.531 0.37869 213.37 0H216.63Z" stroke="#4A2080" stroke-width="1.5" fill="none"/>
+                <path d="M215 76.0039C231.288 75.7805 247.783 85.1289 255.893 99.1558C260.56 107.082 265.146 115.06 269.648 123.09C288.252 156.881 320.73 184.399 361.578 196.58C368.196 198.558 375.017 200.133 382 201.269C375.017 202.406 367.873 202.992 360.666 202.995C316.199 203.393 269.856 179.452 243.172 139.699C237.954 132.119 232.818 124.487 227.765 116.803C224.727 112.418 220.139 110.13 215 110.099C209.861 110.13 205.273 112.418 202.235 116.803C197.182 124.487 192.046 132.119 186.828 139.699C160.144 179.452 113.801 203.393 69.3339 202.995C62.127 202.992 54.9833 202.406 48 201.269C54.9828 200.133 61.8043 198.558 68.4217 196.58C109.27 184.399 141.748 156.881 160.352 123.09C164.854 115.06 169.44 107.082 174.107 99.1558C182.217 85.1289 198.712 75.7805 215 76.0039Z" stroke="#9B7FC0" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <p style="font-size:13px; max-width:none; line-height:1.65; color:var(--body-text);">The outer, heavier form is the horse. The inner, lighter form is the rider. Together they read as terrain. The peak is the moment of throughness. Three readings, one mark.</p>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Clear space and minimum size</div>
+          <p>Maintain a minimum clear space equal to the height of the capital T in the wordmark. Minimum usage size: 120px wide for the landscape lockup, 40px for the icon mark alone.</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">What not to do</div>
+          <div class="dont-grid">
+            <div class="dont-card"><div class="dont-title">✕ Do not stretch or distort</div><div class="dont-desc">Always scale proportionally. Never squeeze or stretch the mark.</div></div>
+            <div class="dont-card"><div class="dont-title">✕ Do not recolour the mark</div><div class="dont-desc">White, purple deep #4A2080, or near black #1E1128 only.</div></div>
+            <div class="dont-card"><div class="dont-title">✕ Do not use on clashing backgrounds</div><div class="dont-desc">White, warm white, near black, or brand gradient only.</div></div>
+            <div class="dont-card"><div class="dont-title">✕ Do not add effects</div><div class="dont-desc">No drop shadows, glows or outlines on the mark itself.</div></div>
+            <div class="dont-card"><div class="dont-title">✕ Do not use wordmark alone at small sizes</div><div class="dont-desc">Below 40px use icon mark only. The wordmark needs space.</div></div>
+            <div class="dont-card"><div class="dont-title">✕ Do not place on busy photography</div><div class="dont-desc">Ensure sufficient contrast. Use a colour overlay if needed.</div></div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="nav.js"></script>
+</body>
+</html>

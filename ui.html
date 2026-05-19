@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Components — Thruness Brand Guidelines</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .surface-demo {
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 12px;
+    }
+    .input-demo {
+      font-family: var(--font-body);
+      font-size: 14px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      color: var(--near-black);
+      outline: none;
+      transition: border-color 0.15s;
+      width: 100%;
+      max-width: 280px;
+    }
+    .input-demo:focus { border-color: var(--purple-mid); }
+    .app-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      max-width: 320px;
+    }
+  </style>
+</head>
+<body>
+  <div id="mobileNavContainer"></div>
+  <div class="layout">
+    <div class="sidebar" id="sidebar"></div>
+    <main class="main">
+      <div class="page-header">
+        <div class="eyebrow">Product</div>
+        <h1>UI Components</h1>
+        <p class="intro">Core patterns for the app and website. Built on the brand palette and type system.</p>
+      </div>
+      <div class="content">
+
+        <div class="section">
+          <div class="section-label">Buttons</div>
+          <div class="card">
+            <div class="component-row">
+              <a href="#" class="btn btn-primary">Start ride</a>
+              <a href="#" class="btn btn-secondary">View session</a>
+              <a href="#" class="btn btn-ghost">Settings</a>
+            </div>
+            <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+              <table style="font-size:12px; width:100%; border-collapse:collapse;">
+                <tr>
+                  <td style="padding:6px 12px 6px 0; font-weight:700; color:var(--near-black); width:120px;">Primary</td>
+                  <td style="padding:6px 0; color:var(--mid-grey);">Background #4A2080, white text. Main CTA. One per screen.</td>
+                </tr>
+                <tr>
+                  <td style="padding:6px 12px 6px 0; font-weight:700; color:var(--near-black);">Secondary</td>
+                  <td style="padding:6px 0; color:var(--mid-grey);">Transparent, #4A2080 border and text. Supporting actions.</td>
+                </tr>
+                <tr>
+                  <td style="padding:6px 12px 6px 0; font-weight:700; color:var(--near-black);">Ghost</td>
+                  <td style="padding:6px 0; color:var(--mid-grey);">Subtle. For tertiary actions, settings, cancel.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Badges and labels</div>
+          <div class="card">
+            <div class="component-row">
+              <span class="badge badge-purple">Canter</span>
+              <span class="badge badge-purple">Trot</span>
+              <span class="badge badge-green">Session saved</span>
+              <span class="badge badge-amber">Calibration needed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Gait bar</div>
+          <div class="card" style="max-width:480px;">
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--purple-mid);margin-bottom:8px;">Wednesday · 45 min</div>
+            <div class="gait-bar" style="height:12px; margin-bottom:12px;">
+              <div class="gait-seg" style="background:#8FA8C8; width:6%;"></div>
+              <div class="gait-seg" style="background:#5B8DB8; width:18%;"></div>
+              <div class="gait-seg" style="background:#2E6EA6; width:45%;"></div>
+              <div class="gait-seg" style="background:#6B4A9A; width:28%;"></div>
+              <div class="gait-seg" style="background:#4A2080; width:3%;"></div>
+            </div>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;">
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#8FA8C8;display:inline-block;"></span>Halt 6%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#5B8DB8;display:inline-block;"></span>Walk 18%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#2E6EA6;display:inline-block;"></span>Trot 45%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#6B4A9A;display:inline-block;"></span>Canter 28%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#4A2080;display:inline-block;"></span>Gallop 3%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Session card</div>
+          <div class="app-card">
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--purple-mid);margin-bottom:6px;">Wednesday · Morning hack</div>
+            <div style="font-family:var(--font-display);font-size:20px;color:var(--near-black);margin-bottom:8px;line-height:1.2;">Something shifted in that last canter.</div>
+            <div class="gait-bar" style="margin-bottom:10px;">
+              <div class="gait-seg" style="background:#5B8DB8;width:20%;"></div>
+              <div class="gait-seg" style="background:#2E6EA6;width:48%;"></div>
+              <div class="gait-seg" style="background:#6B4A9A;width:32%;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+              <div style="font-size:12px;color:var(--mid-grey);">45 min · Bella</div>
+              <span style="font-size:12px;color:var(--purple-mid);font-weight:700;">View →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Form inputs</div>
+          <div class="card" style="display:flex;flex-direction:column;gap:12px;max-width:340px;">
+            <div>
+              <label style="display:block;font-size:12px;font-weight:700;color:var(--near-black);margin-bottom:5px;">Horse name</label>
+              <input class="input-demo" type="text" placeholder="e.g. Bella">
+            </div>
+            <div>
+              <label style="display:block;font-size:12px;font-weight:700;color:var(--near-black);margin-bottom:5px;">Discipline</label>
+              <input class="input-demo" type="text" placeholder="e.g. Dressage">
+            </div>
+            <a href="#" class="btn btn-primary" style="align-self:flex-start;">Save horse</a>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Surface treatments</div>
+          <div class="surface-demo" style="background:var(--warm-white); border:1px solid var(--border);">
+            <div style="font-size:12px;color:var(--mid-grey);">Warm white #F7F4FC — Default page and app background</div>
+          </div>
+          <div class="surface-demo" style="background:var(--white); border:1px solid var(--border);">
+            <div style="font-size:12px;color:var(--mid-grey);">White #FFFFFF — Cards, modals, input fields</div>
+          </div>
+          <div class="surface-demo" style="background:var(--purple-tint);">
+            <div style="font-size:12px;color:var(--purple-mid);">Purple tint #F0EAF8 — Callouts, selected states, highlights</div>
+          </div>
+          <div class="surface-demo" style="background:var(--near-black);">
+            <div style="font-size:12px;color:rgba(255,255,255,0.5);">Near black #1E1128 — Sidebar, active ride screen, dark mode</div>
+          </div>
+          <div class="surface-demo" style="background: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);">
+            <div style="font-size:12px;color:rgba(255,255,255,0.8);">Hero gradient — Splash, app icon, marketing moments only</div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="nav.js"></script>
+</body>
+</html>
