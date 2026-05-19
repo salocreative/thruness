@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="logos/Thruness-App-Icon-Rounded.png">
   <link rel="apple-touch-icon" href="logos/Thruness-App-Icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     .surface-demo {
       border-radius: var(--radius);
@@ -34,6 +35,28 @@
       padding: 20px;
       max-width: 320px;
     }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 12px;
+    }
+    .icon-cell {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      padding: 18px 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--white);
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .icon-cell:hover { border-color: var(--purple-light); transform: translateY(-1px); }
+    .icon-cell svg { width: 26px; height: 26px; color: var(--purple-deep); stroke-width: 2; }
+    .icon-cell .icon-label { font-size: 11px; font-family: monospace; color: var(--mid-grey); }
+
+    .size-row { display: flex; gap: 28px; align-items: flex-end; flex-wrap: wrap; }
+    .size-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .size-cell svg { color: var(--purple-deep); stroke-width: 2; }
+    .size-cell .size-label { font-size: 11px; color: var(--mid-grey); font-family: monospace; }
   </style>
 </head>
 <body>
@@ -52,9 +75,9 @@
           <div class="section-label">Buttons</div>
           <div class="card">
             <div class="component-row">
-              <a href="#" class="btn btn-primary">Start ride</a>
-              <a href="#" class="btn btn-secondary">View session</a>
-              <a href="#" class="btn btn-ghost">Settings</a>
+              <a href="#" class="btn btn-primary"><i data-lucide="play"></i>Start ride</a>
+              <a href="#" class="btn btn-secondary"><i data-lucide="bar-chart-3"></i>View session</a>
+              <a href="#" class="btn btn-ghost"><i data-lucide="settings"></i>Settings</a>
             </div>
             <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
               <table style="font-size:12px; width:100%; border-collapse:collapse;">
@@ -136,7 +159,68 @@
               <label style="display:block;font-size:12px;font-weight:700;color:var(--near-black);margin-bottom:5px;">Discipline</label>
               <input class="input-demo" type="text" placeholder="e.g. Dressage">
             </div>
-            <a href="#" class="btn btn-primary" style="align-self:flex-start;">Save horse</a>
+            <a href="#" class="btn btn-primary" style="align-self:flex-start;"><i data-lucide="check"></i>Save horse</a>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Iconography</div>
+          <p>We use <a href="https://lucide.dev" target="_blank" rel="noopener" style="color:var(--purple-mid);">Lucide</a> for all UI iconography. A single open-source set keeps us consistent across the app, marketing site and product UI. Default stroke width is 2; icons inherit colour from their parent text by default.</p>
+
+          <div class="card" style="margin-top: 18px;">
+            <div class="icon-grid">
+              <div class="icon-cell"><i data-lucide="mic"></i><div class="icon-label">mic</div></div>
+              <div class="icon-cell"><i data-lucide="play"></i><div class="icon-label">play</div></div>
+              <div class="icon-cell"><i data-lucide="pause"></i><div class="icon-label">pause</div></div>
+              <div class="icon-cell"><i data-lucide="square"></i><div class="icon-label">square</div></div>
+              <div class="icon-cell"><i data-lucide="activity"></i><div class="icon-label">activity</div></div>
+              <div class="icon-cell"><i data-lucide="bar-chart-3"></i><div class="icon-label">bar-chart-3</div></div>
+              <div class="icon-cell"><i data-lucide="heart"></i><div class="icon-label">heart</div></div>
+              <div class="icon-cell"><i data-lucide="clock"></i><div class="icon-label">clock</div></div>
+              <div class="icon-cell"><i data-lucide="calendar"></i><div class="icon-label">calendar</div></div>
+              <div class="icon-cell"><i data-lucide="compass"></i><div class="icon-label">compass</div></div>
+              <div class="icon-cell"><i data-lucide="map-pin"></i><div class="icon-label">map-pin</div></div>
+              <div class="icon-cell"><i data-lucide="user"></i><div class="icon-label">user</div></div>
+              <div class="icon-cell"><i data-lucide="bell"></i><div class="icon-label">bell</div></div>
+              <div class="icon-cell"><i data-lucide="settings"></i><div class="icon-label">settings</div></div>
+              <div class="icon-cell"><i data-lucide="check"></i><div class="icon-label">check</div></div>
+              <div class="icon-cell"><i data-lucide="chevron-right"></i><div class="icon-label">chevron-right</div></div>
+            </div>
+            <div style="font-size:12px; color:var(--mid-grey); margin-top:14px;">A starter set. Browse the full library at <a href="https://lucide.dev/icons" target="_blank" rel="noopener" style="color:var(--purple-mid);">lucide.dev/icons</a>.</div>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
+            <div class="card">
+              <div class="section-label" style="margin-bottom:14px;">Sizes</div>
+              <div class="size-row">
+                <div class="size-cell"><i data-lucide="activity" style="width:16px;height:16px;"></i><div class="size-label">16</div></div>
+                <div class="size-cell"><i data-lucide="activity" style="width:20px;height:20px;"></i><div class="size-label">20</div></div>
+                <div class="size-cell"><i data-lucide="activity" style="width:24px;height:24px;"></i><div class="size-label">24</div></div>
+                <div class="size-cell"><i data-lucide="activity" style="width:32px;height:32px;"></i><div class="size-label">32</div></div>
+              </div>
+              <p style="font-size:12px; color:var(--mid-grey); margin-top:14px; line-height:1.55;"><strong style="color:var(--near-black);">16</strong> inline with body text · <strong style="color:var(--near-black);">20</strong> dense UI, table rows · <strong style="color:var(--near-black);">24</strong> buttons, primary actions · <strong style="color:var(--near-black);">32+</strong> feature illustrations.</p>
+            </div>
+            <div class="card">
+              <div class="section-label" style="margin-bottom:14px;">Colour and weight</div>
+              <div style="display:flex; gap:18px; align-items:center; margin-bottom:14px;">
+                <i data-lucide="heart" style="width:28px;height:28px;color:var(--purple-deep);"></i>
+                <i data-lucide="heart" style="width:28px;height:28px;color:var(--purple-mid);"></i>
+                <i data-lucide="heart" style="width:28px;height:28px;color:var(--mid-grey);"></i>
+                <i data-lucide="heart" style="width:28px;height:28px;color:#B33A22;"></i>
+              </div>
+              <p style="font-size:12px; color:var(--mid-grey); line-height:1.55;">Icons inherit colour from their parent text. Stroke width <strong style="color:var(--near-black);">2</strong> is the default. Use <strong style="color:var(--near-black);">1.5</strong> at sizes 28px+ for a softer feel. Never recolour an icon to clash with its surface.</p>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px;">
+            <div class="section-label" style="margin-bottom:10px;">Usage</div>
+            <pre style="font-size:12px; font-family:monospace; background:var(--purple-tint); color:var(--near-black); padding:14px 16px; border-radius:var(--radius-sm); overflow-x:auto; line-height:1.55;">&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;
+
+&lt;i data-lucide="play"&gt;&lt;/i&gt;
+
+&lt;script&gt;lucide.createIcons();&lt;/script&gt;</pre>
           </div>
         </div>
 
@@ -165,5 +249,10 @@
     </main>
   </div>
   <script src="nav.js"></script>
+  <script>
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
 </body>
 </html>
