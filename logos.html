@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logos — Thruness Brand Guidelines</title>
-  <link rel="icon" type="image/png" href="logos/Thruness-Profile-Purple.png">
-  <link rel="apple-touch-icon" href="logos/Thruness-Profile-Purple.png">
+  <link rel="icon" type="image/png" href="logos/Thruness-App-Icon-Rounded.png">
+  <link rel="apple-touch-icon" href="logos/Thruness-App-Icon.png">
   <link rel="stylesheet" href="style.css">
   <style>
     .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
@@ -23,6 +23,18 @@
     .profile-preview { height: 160px; display: flex; align-items: center; justify-content: center; padding: 20px; }
     .profile-preview img { width: 100px; height: 100px; border-radius: 22px; object-fit: cover; }
     .profile-info { background: var(--white); padding: 12px 16px; border-top: 1px solid var(--border); }
+
+    .app-icon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .app-icon-item { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+    .app-icon-preview {
+      height: 200px;
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      background: repeating-conic-gradient(#F2ECF8 0% 25%, #FFFFFF 0% 50%) 50% / 16px 16px;
+    }
+    .app-icon-preview img { width: 128px; height: 128px; object-fit: contain; box-shadow: 0 8px 24px rgba(74,32,128,0.18); }
+    .app-icon-preview img.squircle { border-radius: 28px; }
+    .app-icon-info { background: var(--white); padding: 14px 18px; border-top: 1px solid var(--border); }
     .dont-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
     .dont-card { border: 1px solid var(--border); border-left: 3px solid #B33A22; border-radius: var(--radius); padding: 16px 20px; background: var(--white); }
     .dont-title { font-size: 12px; font-weight: 700; color: #B33A22; margin-bottom: 5px; }
@@ -83,6 +95,35 @@
                   <a href="logos/Thruness-Icon-Light.svg" download>SVG</a>
                   <a href="logos/Thruness-Icon-Light.png" download>PNG</a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">App icon</div>
+          <p style="margin-bottom:18px;">The full-bleed mark on the brand gradient. Submit the square master to app stores — iOS and Android apply their own corner radius. Use the rounded version for in-product previews, marketing imagery and the site favicon.</p>
+          <div class="app-icon-grid">
+            <div class="app-icon-item">
+              <div class="app-icon-preview">
+                <img src="logos/Thruness-App-Icon.png" alt="Thruness app icon — square master">
+              </div>
+              <div class="app-icon-info">
+                <div class="logo-name">App icon — Square master</div>
+                <div class="logo-usage">App Store, Play Store, source file</div>
+                <div class="logo-links"><a href="logos/Thruness-App-Icon.png" download>PNG</a></div>
+              </div>
+            </div>
+            <div class="app-icon-item">
+              <div class="app-icon-preview">
+                <img class="squircle" src="logos/Thruness-App-Icon-Rounded.png" alt="Thruness app icon — rounded">
+              </div>
+              <div class="app-icon-info">
+                <div class="logo-name">App icon — Rounded</div>
+                <div class="logo-usage">In-product previews, marketing, favicon</div>
+                <div class="logo-links"><a href="logos/Thruness-App-Icon-Rounded.png" download>PNG</a></div>
               </div>
             </div>
           </div>
