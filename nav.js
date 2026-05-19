@@ -11,6 +11,8 @@ const NAV_ITEMS = [
   { href: 'tov.html', icon: '❝', label: 'Tone of Voice' },
   { section: 'Product' },
   { href: 'ui.html', icon: '▣', label: 'UI Components' },
+  { section: 'Resources' },
+  { href: 'ai-context.html', icon: '✺', label: 'AI Context' },
 ];
 
 function buildSidebar() {

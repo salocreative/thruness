@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Context — Thruness Brand Guidelines</title>
+  <link rel="icon" type="image/png" href="logos/Thruness-App-Icon-Rounded.png">
+  <link rel="apple-touch-icon" href="logos/Thruness-App-Icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .file-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+    .file-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex; flex-direction: column; gap: 6px;
+      transition: border-color 0.15s, transform 0.15s;
+      text-decoration: none;
+      color: var(--near-black);
+    }
+    .file-card:hover { border-color: var(--purple-light); transform: translateY(-1px); }
+    .file-card-head { display: flex; align-items: center; gap: 10px; }
+    .file-card svg { width: 18px; height: 18px; color: var(--purple-mid); flex-shrink: 0; }
+    .file-card-name { font-family: monospace; font-size: 13px; color: var(--near-black); }
+    .file-card-desc { font-size: 13px; color: var(--mid-grey); line-height: 1.5; }
+
+    .featured-card {
+      background: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 26px 28px;
+      display: flex; align-items: center; gap: 22px;
+      text-decoration: none;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .featured-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .featured-card .featured-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .featured-card .featured-icon svg { width: 28px; height: 28px; color: var(--white); }
+    .featured-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 400; margin-bottom: 4px; }
+    .featured-card p { font-size: 14px; opacity: 0.85; line-height: 1.55; margin: 0; max-width: none; }
+    .featured-card .featured-arrow { margin-left: auto; opacity: 0.7; }
+
+    .usage-step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .usage-step:last-child { border-bottom: none; }
+    .usage-num { width: 26px; height: 26px; border-radius: 50%; background: var(--purple-tint); color: var(--purple-deep); font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--font-body); }
+    .usage-body { flex: 1; }
+    .usage-title { font-weight: 700; font-size: 14px; color: var(--near-black); margin-bottom: 3px; }
+    .usage-desc { font-size: 13px; color: var(--mid-grey); line-height: 1.55; }
+
+    pre.snippet { font-size: 12px; font-family: monospace; background: var(--near-black); color: #E2D8F0; padding: 16px 18px; border-radius: var(--radius-sm); overflow-x: auto; line-height: 1.6; margin: 12px 0; }
+    pre.snippet .c { color: #9B7FC0; }
+  </style>
+</head>
+<body>
+  <div id="mobileNavContainer"></div>
+  <div class="layout">
+    <div class="sidebar" id="sidebar"></div>
+    <main class="main">
+      <div class="page-header">
+        <div class="eyebrow">Resources</div>
+        <h1>AI Context Package</h1>
+        <p class="intro">A compact, LLM-friendly version of the Thruness brand guidelines. Drop it into a system prompt, project context window or RAG store so any AI assistant can write, design and build for Thruness without going off-brand.</p>
+      </div>
+      <div class="content">
+
+        <div class="section">
+          <a class="featured-card" href="ai-context/thruness-brand-all.md" download>
+            <span class="featured-icon"><i data-lucide="sparkles"></i></span>
+            <div>
+              <h3>Download the full pack</h3>
+              <p><strong>thruness-brand-all.md</strong> — every section in a single 20KB markdown file. Paste it into Claude, ChatGPT, Cursor or any other AI tool as context.</p>
+            </div>
+            <span class="featured-arrow"><i data-lucide="arrow-down-to-line"></i></span>
+          </a>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Individual files</div>
+          <p style="margin-bottom: 16px;">Topic-by-topic, if you only need to brief the assistant on one area. All files are plain markdown.</p>
+          <div class="file-grid">
+            <a class="file-card" href="ai-context/README.md" download>
+              <div class="file-card-head"><i data-lucide="book-open"></i><span class="file-card-name">README.md</span></div>
+              <div class="file-card-desc">Overview of the package and how to use it.</div>
+            </a>
+            <a class="file-card" href="ai-context/01-brand-overview.md" download>
+              <div class="file-card-head"><i data-lucide="compass"></i><span class="file-card-name">01-brand-overview.md</span></div>
+              <div class="file-card-desc">What Thruness is, who it's for, positioning statement, who we are not.</div>
+            </a>
+            <a class="file-card" href="ai-context/02-brand-story.md" download>
+              <div class="file-card-head"><i data-lucide="heart"></i><span class="file-card-name">02-brand-story.md</span></div>
+              <div class="file-card-desc">Emotional territory, the spiritual bond, the mark explained.</div>
+            </a>
+            <a class="file-card" href="ai-context/03-logos.md" download>
+              <div class="file-card-head"><i data-lucide="hexagon"></i><span class="file-card-name">03-logos.md</span></div>
+              <div class="file-card-desc">Logo variants, app icon, mark anatomy, clear space, what not to do.</div>
+            </a>
+            <a class="file-card" href="ai-context/04-colours.md" download>
+              <div class="file-card-head"><i data-lucide="palette"></i><span class="file-card-name">04-colours.md</span></div>
+              <div class="file-card-desc">Core palette, gradients, gait colours, WCAG accessibility notes.</div>
+            </a>
+            <a class="file-card" href="ai-context/05-typography.md" download>
+              <div class="file-card-head"><i data-lucide="type"></i><span class="file-card-name">05-typography.md</span></div>
+              <div class="file-card-desc">Philosopher + PT Sans pairing, full type scale, usage rules.</div>
+            </a>
+            <a class="file-card" href="ai-context/06-tone-of-voice.md" download>
+              <div class="file-card-head"><i data-lucide="message-circle"></i><span class="file-card-name">06-tone-of-voice.md</span></div>
+              <div class="file-card-desc">Voice principles, do/don't pairs, words, app strings, voice prompts.</div>
+            </a>
+            <a class="file-card" href="ai-context/07-ui-components.md" download>
+              <div class="file-card-head"><i data-lucide="layout-grid"></i><span class="file-card-name">07-ui-components.md</span></div>
+              <div class="file-card-desc">Buttons, badges, gait bar, cards, forms, Lucide icons, surfaces.</div>
+            </a>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">How to use</div>
+          <div class="card">
+            <div class="usage-step">
+              <div class="usage-num">1</div>
+              <div class="usage-body">
+                <div class="usage-title">Cursor / Claude Code project rules</div>
+                <div class="usage-desc">Copy the contents of <code>thruness-brand-all.md</code> into a project rules file at <code>.cursor/rules/thruness-brand.md</code> or <code>AGENTS.md</code>. The assistant will read it on every turn.</div>
+              </div>
+            </div>
+            <div class="usage-step">
+              <div class="usage-num">2</div>
+              <div class="usage-body">
+                <div class="usage-title">Custom GPT / Claude Project</div>
+                <div class="usage-desc">Upload all the numbered files. The assistant retrieves the right one for each question — type questions hit typography, voice questions hit tone-of-voice, and so on.</div>
+              </div>
+            </div>
+            <div class="usage-step">
+              <div class="usage-num">3</div>
+              <div class="usage-body">
+                <div class="usage-title">One-off prompts</div>
+                <div class="usage-desc">If you only need help with one task, paste only the relevant file (e.g. just <code>06-tone-of-voice.md</code> when writing copy).</div>
+              </div>
+            </div>
+            <div class="usage-step">
+              <div class="usage-num">4</div>
+              <div class="usage-body">
+                <div class="usage-title">RAG / vector store</div>
+                <div class="usage-desc">Index the individual files. Each one is small enough to fit comfortably in a single chunk, and the structured markdown makes for clean retrieval.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Suggested system prompt</div>
+          <p>If you're wiring this into a custom assistant, lead with something like:</p>
+          <pre class="snippet">You are a brand-aware assistant for Thruness — a voice-first gait
+tracking app for equestrians. Read the brand guidelines below before
+responding. Apply the tone of voice (honest, quiet, knowing, reverent),
+use the type system (Philosopher Regular + PT Sans), the colour palette,
+the icon library (Lucide, stroke 2), and the UI patterns described.
+
+UK English. No exclamation marks. No emoji in UI. Voice prompts under
+six words. Horse is he / she / they — never &quot;it&quot;.
+
+---
+&lt;paste contents of thruness-brand-all.md here&gt;</pre>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section">
+          <div class="section-label">Keeping the pack fresh</div>
+          <p>The markdown files live alongside the rest of the brand guidelines in the <a href="https://github.com/salocreative/thruness" target="_blank" rel="noopener" style="color:var(--purple-mid);">salocreative/thruness</a> repo, in the <code>/ai-context/</code> folder. When the brand evolves, the files are updated there first, then re-distributed. Pin a specific commit if you need a stable reference.</p>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="nav.js"></script>
+  <script>
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
