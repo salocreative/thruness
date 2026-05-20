@@ -3,10 +3,6 @@
 _Generated from the Thruness brand guidelines, version 1.0, May 2026._
 _Prepared by Salo Creative._
 
-This is the complete brand guidelines as a single document, intended as a
-drop-in context pack for AI assistants. For the topic-by-topic version, see
-the individual numbered files in this folder.
-
 ---
 
 # Brand Overview
@@ -183,8 +179,8 @@ the icon mark alone.
 
 - **Do not stretch or distort.** Always scale proportionally. Never squeeze or
   stretch the mark.
-- **Do not recolour the mark.** White, purple deep `#4A2080`, or near black
-  `#1E1128` only.
+- **Do not recolour the mark.** White, sage deep `#067A60`, or near black
+  `#0F1F1A` only.
 - **Do not use on clashing backgrounds.** White, warm white, near black, or
   brand gradient only.
 - **Do not add effects.** No drop shadows, glows or outlines on the mark
@@ -198,17 +194,44 @@ the icon mark alone.
 
 # Colours
 
-## Core palette
+Sage green is the **primary** brand colour. Purple is retained as a **secondary**
+accent — use it sparingly for contrast and warmth, not as the default UI palette.
+
+## Primary palette — Sage green
+
+Derived from the brand gradient (teal-green → forest green).
 
 | Name | Hex | Use |
 | --- | --- | --- |
-| Hero gradient | `#C040D0` → `#4A1A8A` | App icon, splash screen, hero moments, marketing |
-| Purple mid | `#6B4A9A` | Primary interactive, buttons, links, active states |
-| Purple light | `#9B7FC0` | Accents, hover states, decorative elements |
-| Purple deep | `#4A2080` | Headings, emphasis, dark UI elements |
-| Near black | `#1E1128` | Body copy, nav background, dark surfaces |
-| Warm white | `#F7F4FC` | Page backgrounds, card surfaces |
-| Purple tint | `#F0EAF8` | Callout backgrounds, hover fills, subtle highlights |
+| Hero gradient | `#12C49A` → `#034D3A` | App icon, splash screen, hero moments, marketing |
+| Sage bright | `#12C49A` | Gradient top, energetic accents, active highlights |
+| Sage mid | `#0B9A78` | Links, eyebrows, active states, hover on primary |
+| Sage deep | `#067A60` | Primary buttons, emphasis, text on light backgrounds |
+| Sage forest | `#034D3A` | Gradient bottom, dark UI, badge text |
+| Sage light | `#7ACBB0` | Hover borders, decorative accents, chart fills |
+| Sage tint | `#E8F5F0` | Callout backgrounds, hover fills, subtle highlights |
+| Sage tint 2 | `#D4EDE4` | Badges, selected states, secondary fills |
+
+## Secondary palette — Purple
+
+Use sparingly — not as the default interactive colour.
+
+| Name | Hex | Use |
+| --- | --- | --- |
+| Purple mid | `#6B4A9A` | Secondary accents, data contrast |
+| Purple light | `#9B7FC0` | Decorative only — never for text |
+| Purple deep | `#4A2080` | Legacy logo on light, secondary badge text |
+| Purple tint | `#F0EAF8` | Secondary callout fills, sparingly |
+
+## Neutrals — green-tinted
+
+| Name | Hex | Use |
+| --- | --- | --- |
+| Near black | `#0F1F1A` | Sidebar, dark surfaces, highest-contrast text |
+| Body text | `#1E3A32` | Paragraphs, descriptions |
+| Mid grey | `#5C7268` | Secondary text, metadata, captions |
+| Warm white | `#F5FAF8` | Page backgrounds, card surfaces |
+| Border | `#D8E8E2` | Card borders, dividers, input outlines |
 
 ## Gradients
 
@@ -216,61 +239,82 @@ All gradients run at **135°**.
 
 | Name | Stops | Use |
 | --- | --- | --- |
-| Hero | `#C040D0 → #7B2FC0 → #4A1A8A` | App icon, splash, marketing hero |
-| Brand | `#9B7FC0 → #6B4A9A` | UI highlights, cards, subtle brand moments |
-| Night | `#2D1B4E → #150A2A` | Dark mode, active ride screen |
-| Green accent | `#078B22 → #12B30D` | Success states, gait active indicators |
+| Hero | `#12C49A → #0B9A78 → #034D3A` | App icon, splash, marketing hero |
+| Brand | `#7ACBB0 → #0B9A78` | UI highlights, cards, subtle brand moments |
+| Night | `#1A3D32 → #0A1F18` | Dark mode, active ride screen |
+
+Reference vertical master: `logos/Thruness-Gradient-Sage.png`
+
+## Suggested shade scale
+
+| Token | Hex | Use |
+| --- | --- | --- |
+| Sage 50 | `#E8F5F0` | Lightest tint, callouts |
+| Sage 100 | `#D4EDE4` | Badges, selected fills |
+| Sage 200 | `#A8D9C8` | Halt gait, subtle charts |
+| Sage 300 | `#7ACBB0` | Light accent, hover borders |
+| Sage 400 | `#12C49A` | Gradient top, energetic accent |
+| Sage 500 | `#0B9A78` | Links, eyebrows, hover states |
+| Sage 600 | `#067A60` | Primary buttons, text on light |
+| Sage 700 | `#034D3A` | Gradient bottom, dark emphasis |
+| Sage 800 | `#023528` | Night gradient, deep surfaces |
+| Sage 900 | `#0F1F1A` | Near black, sidebar, nav |
 
 ## Gait colours
 
-Used in the app for gait state indicators. Calm and data-led. Intensity maps to
-speed. Not used for text — graphic and UI fill elements only.
+Green scale — intensity maps to speed. Not used for text.
 
 | Gait | Hex | Description |
 | --- | --- | --- |
-| Halt | `#8FA8C8` | No movement |
-| Walk | `#5B8DB8` | 4-beat, slow |
-| Trot | `#2E6EA6` | 2-beat, regular |
-| Canter | `#6B4A9A` | 3-beat + float |
-| Gallop | `#4A2080` | 4-beat, full speed |
-
-### Example gait bar (45-minute schooling session)
-
-`Halt 6% · Walk 18% · Trot 45% · Canter 28% · Gallop 3%`
+| Halt | `#B8D4C8` | No movement |
+| Walk | `#8FC4AD` | 4-beat, slow |
+| Trot | `#5AA88C` | 2-beat, regular |
+| Canter | `#2E8068` | 3-beat + float |
+| Gallop | `#034D3A` | 4-beat, full speed |
 
 ## Accessibility
 
-All text combinations must meet **WCAG AA** at minimum. Use purple deep or near
-black for any text on light backgrounds.
+All text combinations must meet **WCAG AA** at minimum.
 
 | Combination | Contrast | Rating |
 | --- | --- | --- |
-| `#4A2080` on white | 7.2:1 | AAA ✓ |
-| `#6B4A9A` on white | 4.6:1 | AA ✓ |
-| `#1E1128` on white | 17.8:1 | AAA ✓ |
-| `#9B7FC0` on white | 2.8:1 | Fail for text |
+| `#067A60` on white | 5.8:1 | AA ✓ |
+| `#034D3A` on white | 9.1:1 | AAA ✓ |
+| `#0F1F1A` on white | 16.2:1 | AAA ✓ |
+| `#7ACBB0` on white | 2.1:1 | Fail for text |
 
-`#9B7FC0` and the hero gradient are for graphic and decorative use only. Never
-use them for text.
+`#7ACBB0`, `#12C49A` and the hero gradient are for graphic and decorative use
+only. Never use them for body text.
 
 ## CSS variables
 
 ```css
 :root {
-  --purple-hero: #8B2FC9;
+  /* Primary — Sage green */
+  --sage-bright: #12C49A;
+  --sage-mid: #0B9A78;
+  --sage-deep: #067A60;
+  --sage-forest: #034D3A;
+  --sage-light: #7ACBB0;
+  --sage-tint: #E8F5F0;
+  --sage-tint-2: #D4EDE4;
+  /* Secondary — Purple */
   --purple-deep: #4A2080;
   --purple-mid: #6B4A9A;
   --purple-light: #9B7FC0;
   --purple-tint: #F0EAF8;
   --purple-tint-2: #E8DDF5;
-  --near-black: #1E1128;
-  --body-text: #3D2B52;
-  --mid-grey: #7A6A8A;
-  --warm-white: #F7F4FC;
+  /* Neutrals */
+  --near-black: #0F1F1A;
+  --body-text: #1E3A32;
+  --mid-grey: #5C7268;
+  --warm-white: #F5FAF8;
   --white: #FFFFFF;
-  --border: #E2D8F0;
-  --gradient-hero: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);
-  --gradient-subtle: linear-gradient(135deg, #9B7FC0 0%, #6B4A9A 100%);
+  --border: #D8E8E2;
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
+  --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
+  --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
 }
 ```
 
@@ -466,15 +510,15 @@ PT Sans Bold 14px, 10px × 22px padding, 8px gap to icon, no border for primary,
 
 | Variant | Style | Use |
 | --- | --- | --- |
-| **Primary** | Background `#4A2080` (Purple deep), white text | Main CTA. One per screen. |
-| **Secondary** | Transparent, `#4A2080` 1.5px border + text | Supporting actions. |
-| **Ghost** | Transparent, `#E2D8F0` 1px border, mid-grey text | Tertiary actions, settings, cancel. |
+| **Primary** | Background `#067A60` (Sage deep), white text | Main CTA. One per screen. |
+| **Secondary** | Transparent, `#067A60` 1.5px border + text | Supporting actions. |
+| **Ghost** | Transparent, `#D8E8E2` 1px border, mid-grey text | Tertiary actions, settings, cancel. |
 
 Hover states:
 
-- Primary → background shifts to Purple mid `#6B4A9A`.
-- Secondary → background fills with Purple tint `#F0EAF8`.
-- Ghost → border becomes Purple light `#9B7FC0`, text becomes Purple mid.
+- Primary → background shifts to Sage mid `#0B9A78`.
+- Secondary → background fills with Sage tint `#E8F5F0`.
+- Ghost → border becomes Sage light `#7ACBB0`, text becomes Sage mid.
 
 Buttons usually pair with a Lucide icon (16px, stroke 2) on the left of the
 label — e.g. `play` for *Start ride*, `bar-chart-3` for *View session*,
@@ -486,7 +530,8 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 
 | Variant | Background | Text | Use |
 | --- | --- | --- | --- |
-| Purple | `#E8DDF5` | `#4A2080` | Gait names, neutral categories |
+| Sage | `#D4EDE4` | `#034D3A` | Gait names, neutral categories |
+| Purple | `#E8DDF5` | `#4A2080` | Secondary accents only |
 | Green | `#E6F4EA` | `#1b5e20` | Success states (e.g. *Session saved*) |
 | Amber | `#FFF3CD` | `#7a4a00` | Warnings (e.g. *Calibration needed*) |
 
@@ -495,41 +540,36 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 Horizontal stacked bar showing time spent in each gait across a session. 10–12px
 tall, 6px radius, no gaps between segments. Colours follow the gait palette:
 
-- Halt `#8FA8C8`
-- Walk `#5B8DB8`
-- Trot `#2E6EA6`
-- Canter `#6B4A9A`
-- Gallop `#4A2080`
-
-Beneath the bar, list each gait with a 10×10 swatch, the gait name, and the
-percentage — small PT Sans, mid-grey.
+- Halt `#B8D4C8`
+- Walk `#8FC4AD`
+- Trot `#5AA88C`
+- Canter `#2E8068`
+- Gallop `#034D3A`
 
 ## Session card
 
 A summary card representing one ride.
 
 ```
-WEDNESDAY · MORNING HACK            (eyebrow — PT Sans Bold 11px caps, Purple mid)
+WEDNESDAY · MORNING HACK            (eyebrow — PT Sans Bold 11px caps, Sage mid)
 Something shifted in that last canter.   (Heading 2 — Philosopher 20–26px)
 [gait bar]                               (8–10px tall)
-45 min · Bella                  View →   (PT Sans 12px, mid grey · purple link)
+45 min · Bella                  View →   (PT Sans 12px, mid grey · sage link)
 ```
 
 ## Form inputs
 
 - Font: PT Sans 14px.
 - Padding: 10px × 14px.
-- Border: 1.5px solid `#E2D8F0`, radius 8px.
-- Focus: border becomes Purple mid `#6B4A9A`.
+- Border: 1.5px solid `#D8E8E2`, radius 8px.
+- Focus: border becomes Sage mid `#0B9A78`.
 - Background: white.
 - Max width: 280–340px in form layouts.
 - Labels: PT Sans Bold 12px, near black, 5px above the input.
 
 ## Iconography — Lucide
 
-We use [Lucide](https://lucide.dev) for all UI iconography. A single
-open-source set keeps us consistent across the app, marketing site and product
-UI.
+We use [Lucide](https://lucide.dev) for all UI iconography.
 
 - **Default stroke width:** 2.
 - **At 28px+:** use stroke width 1.5 for a softer feel.
@@ -542,33 +582,19 @@ UI.
 - 24px — buttons, primary actions
 - 32px+ — feature illustrations
 
-**Starter set** (covers the app's core vocabulary):
-
-`mic` · `play` · `pause` · `square` · `activity` · `bar-chart-3` · `heart` ·
-`clock` · `calendar` · `compass` · `map-pin` · `user` · `bell` · `settings` ·
-`check` · `chevron-right`
-
-Browse the full library at <https://lucide.dev/icons>.
-
-**Usage**
-
-```html
-<script src="https://unpkg.com/lucide@latest"></script>
-
-<i data-lucide="play"></i>
-
-<script>lucide.createIcons();</script>
-```
+**Starter set:** `mic` · `play` · `pause` · `square` · `activity` ·
+`bar-chart-3` · `heart` · `clock` · `calendar` · `compass` · `map-pin` ·
+`user` · `bell` · `settings` · `check` · `chevron-right`
 
 ## Surface treatments
 
 | Surface | Hex | Use |
 | --- | --- | --- |
-| Warm white | `#F7F4FC` | Default page and app background |
+| Warm white | `#F5FAF8` | Default page and app background |
 | White | `#FFFFFF` | Cards, modals, input fields |
-| Purple tint | `#F0EAF8` | Callouts, selected states, highlights |
-| Near black | `#1E1128` | Sidebar, active ride screen, dark mode |
-| Hero gradient | `#C040D0 → #4A1A8A` (135°) | Splash, app icon, marketing moments only |
+| Sage tint | `#E8F5F0` | Callouts, selected states, highlights |
+| Near black | `#0F1F1A` | Sidebar, active ride screen, dark mode |
+| Hero gradient | `#12C49A → #034D3A` (135°) | Splash, app icon, marketing moments only |
 
 ## Layout system
 
@@ -576,17 +602,14 @@ Browse the full library at <https://lucide.dev/icons>.
 - Page header: white, with eyebrow + Philosopher H1 + intro paragraph.
 - Content area max-width: **960px**, 48px × 56px padding.
 - Standard radius: **12px** for cards, **8px** for inputs and small elements.
-- Standard shadows: `0 1px 3px rgba(74,32,128,0.08)` small,
-  `0 4px 16px rgba(74,32,128,0.12)` medium,
-  `0 8px 32px rgba(74,32,128,0.16)` large.
 - Breakpoint: **768px**. Below this the sidebar becomes a hamburger menu.
 
 ## Callout
 
 Quote-style block for emphasis.
 
-- Background: Purple tint `#F0EAF8`.
-- Left border: 3px solid Purple mid `#6B4A9A`.
+- Background: Sage tint `#E8F5F0`.
+- Left border: 3px solid Sage mid `#0B9A78`.
 - Padding: 18px × 22px.
 - Font: PT Sans Italic 15px, near black.
 - Border radius: 0 on the left edge, 8px on the right.

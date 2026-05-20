@@ -73,8 +73,8 @@ the icon mark alone.
 
 - **Do not stretch or distort.** Always scale proportionally. Never squeeze or
   stretch the mark.
-- **Do not recolour the mark.** White, purple deep `#4A2080`, or near black
-  `#1E1128` only.
+- **Do not recolour the mark.** White, sage deep `#067A60`, or near black
+  `#0F1F1A` only.
 - **Do not use on clashing backgrounds.** White, warm white, near black, or
   brand gradient only.
 - **Do not add effects.** No drop shadows, glows or outlines on the mark

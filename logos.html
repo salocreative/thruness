@@ -16,8 +16,8 @@
     .logo-name { font-size: 13px; font-weight: 700; color: var(--near-black); margin-bottom: 2px; }
     .logo-usage { font-size: 12px; color: var(--mid-grey); margin-bottom: 8px; }
     .logo-links { display: flex; gap: 10px; }
-    .logo-links a { font-size: 11px; font-weight: 700; color: var(--purple-mid); text-decoration: none; padding: 3px 8px; background: var(--purple-tint); border-radius: 4px; }
-    .logo-links a:hover { background: var(--purple-tint-2); }
+    .logo-links a { font-size: 11px; font-weight: 700; color: var(--sage-mid); text-decoration: none; padding: 3px 8px; background: var(--sage-tint); border-radius: 4px; }
+    .logo-links a:hover { background: var(--sage-tint-2); }
     .profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 480px; }
     .profile-item { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
     .profile-preview { height: 160px; display: flex; align-items: center; justify-content: center; padding: 20px; }
@@ -30,9 +30,9 @@
       height: 200px;
       display: flex; align-items: center; justify-content: center;
       padding: 24px;
-      background: repeating-conic-gradient(#F2ECF8 0% 25%, #FFFFFF 0% 50%) 50% / 16px 16px;
+      background: repeating-conic-gradient(#E8F5F0 0% 25%, #FFFFFF 0% 50%) 50% / 16px 16px;
     }
-    .app-icon-preview img { width: 128px; height: 128px; object-fit: contain; box-shadow: 0 8px 24px rgba(74,32,128,0.18); }
+    .app-icon-preview img { width: 128px; height: 128px; object-fit: contain; box-shadow: 0 8px 24px rgba(3,77,58,0.18); }
     .app-icon-preview img.squircle { border-radius: 28px; }
     .app-icon-info { background: var(--white); padding: 14px 18px; border-top: 1px solid var(--border); }
     .dont-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
@@ -59,7 +59,7 @@
           <div class="section-label">Icon mark</div>
           <div class="logo-grid">
             <div class="logo-item">
-              <div class="logo-preview" style="background: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);">
+              <div class="logo-preview" style="background: var(--gradient-hero);">
                 <img src="logos/Thruness-Icon-Light.png" alt="Thruness icon on gradient">
               </div>
               <div class="logo-info">
@@ -237,7 +237,7 @@
           <div class="section-label">Social profile images</div>
           <div class="profile-grid">
             <div class="profile-item">
-              <div class="profile-preview" style="background: var(--purple-tint);">
+              <div class="profile-preview" style="background: var(--sage-tint);">
                 <img src="logos/Thruness-Profile-Purple.png" alt="Thruness purple profile">
               </div>
               <div class="profile-info">
@@ -266,9 +266,9 @@
           <div class="card" style="max-width: 520px;">
             <div style="display:flex; justify-content:center; padding: 8px 0 20px;">
               <svg width="320" height="170" viewBox="0 0 430 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M216.63 0C233.469 0.378693 250.095 11.4649 256.572 26.9746C267.614 51.8867 278.427 76.9067 289.006 102.029C307.866 147.738 349.356 184.408 399.623 197.184C409.508 199.74 419.676 201.406 430 202.135C419.678 202.865 409.234 202.588 398.848 201.273C346.048 195.007 296.079 159.767 272.181 109.679C260.224 85.1834 248.494 60.5843 237 35.8783C233.037 27.1827 224.415 21.8487 215 21.8817C205.585 21.8487 196.963 27.1827 193 35.8783C181.506 60.5843 169.776 85.1835 157.819 109.679C133.921 159.767 83.9525 195.007 31.1525 201.273C20.7661 202.588 10.3222 202.865 0 202.135C10.3237 201.406 20.4924 199.74 30.3767 197.184C80.6439 184.408 122.134 147.738 140.994 102.029C151.573 76.9067 162.386 51.8867 173.428 26.9746C179.905 11.4649 196.531 0.37869 213.37 0H216.63Z" fill="#4A2080" opacity="0.12"/>
-                <path d="M216.63 0C233.469 0.378693 250.095 11.4649 256.572 26.9746C267.614 51.8867 278.427 76.9067 289.006 102.029C307.866 147.738 349.356 184.408 399.623 197.184C409.508 199.74 419.676 201.406 430 202.135C419.678 202.865 409.234 202.588 398.848 201.273C346.048 195.007 296.079 159.767 272.181 109.679C260.224 85.1834 248.494 60.5843 237 35.8783C233.037 27.1827 224.415 21.8487 215 21.8817C205.585 21.8487 196.963 27.1827 193 35.8783C181.506 60.5843 169.776 85.1835 157.819 109.679C133.921 159.767 83.9525 195.007 31.1525 201.273C20.7661 202.588 10.3222 202.865 0 202.135C10.3237 201.406 20.4924 199.74 30.3767 197.184C80.6439 184.408 122.134 147.738 140.994 102.029C151.573 76.9067 162.386 51.8867 173.428 26.9746C179.905 11.4649 196.531 0.37869 213.37 0H216.63Z" stroke="#4A2080" stroke-width="1.5" fill="none"/>
-                <path d="M215 76.0039C231.288 75.7805 247.783 85.1289 255.893 99.1558C260.56 107.082 265.146 115.06 269.648 123.09C288.252 156.881 320.73 184.399 361.578 196.58C368.196 198.558 375.017 200.133 382 201.269C375.017 202.406 367.873 202.992 360.666 202.995C316.199 203.393 269.856 179.452 243.172 139.699C237.954 132.119 232.818 124.487 227.765 116.803C224.727 112.418 220.139 110.13 215 110.099C209.861 110.13 205.273 112.418 202.235 116.803C197.182 124.487 192.046 132.119 186.828 139.699C160.144 179.452 113.801 203.393 69.3339 202.995C62.127 202.992 54.9833 202.406 48 201.269C54.9828 200.133 61.8043 198.558 68.4217 196.58C109.27 184.399 141.748 156.881 160.352 123.09C164.854 115.06 169.44 107.082 174.107 99.1558C182.217 85.1289 198.712 75.7805 215 76.0039Z" stroke="#9B7FC0" stroke-width="1.5" fill="none"/>
+                <path d="M216.63 0C233.469 0.378693 250.095 11.4649 256.572 26.9746C267.614 51.8867 278.427 76.9067 289.006 102.029C307.866 147.738 349.356 184.408 399.623 197.184C409.508 199.74 419.676 201.406 430 202.135C419.678 202.865 409.234 202.588 398.848 201.273C346.048 195.007 296.079 159.767 272.181 109.679C260.224 85.1834 248.494 60.5843 237 35.8783C233.037 27.1827 224.415 21.8487 215 21.8817C205.585 21.8487 196.963 27.1827 193 35.8783C181.506 60.5843 169.776 85.1835 157.819 109.679C133.921 159.767 83.9525 195.007 31.1525 201.273C20.7661 202.588 10.3222 202.865 0 202.135C10.3237 201.406 20.4924 199.74 30.3767 197.184C80.6439 184.408 122.134 147.738 140.994 102.029C151.573 76.9067 162.386 51.8867 173.428 26.9746C179.905 11.4649 196.531 0.37869 213.37 0H216.63Z" fill="#067A60" opacity="0.12"/>
+                <path d="M216.63 0C233.469 0.378693 250.095 11.4649 256.572 26.9746C267.614 51.8867 278.427 76.9067 289.006 102.029C307.866 147.738 349.356 184.408 399.623 197.184C409.508 199.74 419.676 201.406 430 202.135C419.678 202.865 409.234 202.588 398.848 201.273C346.048 195.007 296.079 159.767 272.181 109.679C260.224 85.1834 248.494 60.5843 237 35.8783C233.037 27.1827 224.415 21.8487 215 21.8817C205.585 21.8487 196.963 27.1827 193 35.8783C181.506 60.5843 169.776 85.1835 157.819 109.679C133.921 159.767 83.9525 195.007 31.1525 201.273C20.7661 202.588 10.3222 202.865 0 202.135C10.3237 201.406 20.4924 199.74 30.3767 197.184C80.6439 184.408 122.134 147.738 140.994 102.029C151.573 76.9067 162.386 51.8867 173.428 26.9746C179.905 11.4649 196.531 0.37869 213.37 0H216.63Z" stroke="#067A60" stroke-width="1.5" fill="none"/>
+                <path d="M215 76.0039C231.288 75.7805 247.783 85.1289 255.893 99.1558C260.56 107.082 265.146 115.06 269.648 123.09C288.252 156.881 320.73 184.399 361.578 196.58C368.196 198.558 375.017 200.133 382 201.269C375.017 202.406 367.873 202.992 360.666 202.995C316.199 203.393 269.856 179.452 243.172 139.699C237.954 132.119 232.818 124.487 227.765 116.803C224.727 112.418 220.139 110.13 215 110.099C209.861 110.13 205.273 112.418 202.235 116.803C197.182 124.487 192.046 132.119 186.828 139.699C160.144 179.452 113.801 203.393 69.3339 202.995C62.127 202.992 54.9833 202.406 48 201.269C54.9828 200.133 61.8043 198.558 68.4217 196.58C109.27 184.399 141.748 156.881 160.352 123.09C164.854 115.06 169.44 107.082 174.107 99.1558C182.217 85.1289 198.712 75.7805 215 76.0039Z" stroke="#7ACBB0" stroke-width="1.5" fill="none"/>
               </svg>
             </div>
             <p style="font-size:13px; max-width:none; line-height:1.65; color:var(--body-text);">The thicker line beneath is the horse — the foundation that carries the ride. The lighter line traced over the top is the rider, responsive to the movement underneath. Together they read as terrain. The peak is the moment of throughness. Three readings, one mark.</p>
@@ -288,7 +288,7 @@
           <div class="section-label">What not to do</div>
           <div class="dont-grid">
             <div class="dont-card"><div class="dont-title">✕ Do not stretch or distort</div><div class="dont-desc">Always scale proportionally. Never squeeze or stretch the mark.</div></div>
-            <div class="dont-card"><div class="dont-title">✕ Do not recolour the mark</div><div class="dont-desc">White, purple deep #4A2080, or near black #1E1128 only.</div></div>
+            <div class="dont-card"><div class="dont-title">✕ Do not recolour the mark</div><div class="dont-desc">White, sage deep #067A60, or near black #0F1F1A only.</div></div>
             <div class="dont-card"><div class="dont-title">✕ Do not use on clashing backgrounds</div><div class="dont-desc">White, warm white, near black, or brand gradient only.</div></div>
             <div class="dont-card"><div class="dont-title">✕ Do not add effects</div><div class="dont-desc">No drop shadows, glows or outlines on the mark itself.</div></div>
             <div class="dont-card"><div class="dont-title">✕ Do not use wordmark alone at small sizes</div><div class="dont-desc">Below 40px use icon mark only. The wordmark needs space.</div></div>

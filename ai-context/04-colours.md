@@ -1,16 +1,43 @@
 # Colours
 
-## Core palette
+Sage green is the **primary** brand colour. Purple is retained as a **secondary**
+accent — use it sparingly for contrast and warmth, not as the default UI palette.
+
+## Primary palette — Sage green
+
+Derived from the brand gradient (teal-green → forest green).
 
 | Name | Hex | Use |
 | --- | --- | --- |
-| Hero gradient | `#C040D0` → `#4A1A8A` | App icon, splash screen, hero moments, marketing |
-| Purple mid | `#6B4A9A` | Primary interactive, buttons, links, active states |
-| Purple light | `#9B7FC0` | Accents, hover states, decorative elements |
-| Purple deep | `#4A2080` | Headings, emphasis, dark UI elements |
-| Near black | `#1E1128` | Body copy, nav background, dark surfaces |
-| Warm white | `#F7F4FC` | Page backgrounds, card surfaces |
-| Purple tint | `#F0EAF8` | Callout backgrounds, hover fills, subtle highlights |
+| Hero gradient | `#12C49A` → `#034D3A` | App icon, splash screen, hero moments, marketing |
+| Sage bright | `#12C49A` | Gradient top, energetic accents, active highlights |
+| Sage mid | `#0B9A78` | Links, eyebrows, active states, hover on primary |
+| Sage deep | `#067A60` | Primary buttons, emphasis, text on light backgrounds |
+| Sage forest | `#034D3A` | Gradient bottom, dark UI, badge text |
+| Sage light | `#7ACBB0` | Hover borders, decorative accents, chart fills |
+| Sage tint | `#E8F5F0` | Callout backgrounds, hover fills, subtle highlights |
+| Sage tint 2 | `#D4EDE4` | Badges, selected states, secondary fills |
+
+## Secondary palette — Purple
+
+Use sparingly — not as the default interactive colour.
+
+| Name | Hex | Use |
+| --- | --- | --- |
+| Purple mid | `#6B4A9A` | Secondary accents, data contrast |
+| Purple light | `#9B7FC0` | Decorative only — never for text |
+| Purple deep | `#4A2080` | Legacy logo on light, secondary badge text |
+| Purple tint | `#F0EAF8` | Secondary callout fills, sparingly |
+
+## Neutrals — green-tinted
+
+| Name | Hex | Use |
+| --- | --- | --- |
+| Near black | `#0F1F1A` | Sidebar, dark surfaces, highest-contrast text |
+| Body text | `#1E3A32` | Paragraphs, descriptions |
+| Mid grey | `#5C7268` | Secondary text, metadata, captions |
+| Warm white | `#F5FAF8` | Page backgrounds, card surfaces |
+| Border | `#D8E8E2` | Card borders, dividers, input outlines |
 
 ## Gradients
 
@@ -18,60 +45,81 @@ All gradients run at **135°**.
 
 | Name | Stops | Use |
 | --- | --- | --- |
-| Hero | `#C040D0 → #7B2FC0 → #4A1A8A` | App icon, splash, marketing hero |
-| Brand | `#9B7FC0 → #6B4A9A` | UI highlights, cards, subtle brand moments |
-| Night | `#2D1B4E → #150A2A` | Dark mode, active ride screen |
-| Green accent | `#078B22 → #12B30D` | Success states, gait active indicators |
+| Hero | `#12C49A → #0B9A78 → #034D3A` | App icon, splash, marketing hero |
+| Brand | `#7ACBB0 → #0B9A78` | UI highlights, cards, subtle brand moments |
+| Night | `#1A3D32 → #0A1F18` | Dark mode, active ride screen |
+
+Reference vertical master: `logos/Thruness-Gradient-Sage.png`
+
+## Suggested shade scale
+
+| Token | Hex | Use |
+| --- | --- | --- |
+| Sage 50 | `#E8F5F0` | Lightest tint, callouts |
+| Sage 100 | `#D4EDE4` | Badges, selected fills |
+| Sage 200 | `#A8D9C8` | Halt gait, subtle charts |
+| Sage 300 | `#7ACBB0` | Light accent, hover borders |
+| Sage 400 | `#12C49A` | Gradient top, energetic accent |
+| Sage 500 | `#0B9A78` | Links, eyebrows, hover states |
+| Sage 600 | `#067A60` | Primary buttons, text on light |
+| Sage 700 | `#034D3A` | Gradient bottom, dark emphasis |
+| Sage 800 | `#023528` | Night gradient, deep surfaces |
+| Sage 900 | `#0F1F1A` | Near black, sidebar, nav |
 
 ## Gait colours
 
-Used in the app for gait state indicators. Calm and data-led. Intensity maps to
-speed. Not used for text — graphic and UI fill elements only.
+Green scale — intensity maps to speed. Not used for text.
 
 | Gait | Hex | Description |
 | --- | --- | --- |
-| Halt | `#8FA8C8` | No movement |
-| Walk | `#5B8DB8` | 4-beat, slow |
-| Trot | `#2E6EA6` | 2-beat, regular |
-| Canter | `#6B4A9A` | 3-beat + float |
-| Gallop | `#4A2080` | 4-beat, full speed |
-
-### Example gait bar (45-minute schooling session)
-
-`Halt 6% · Walk 18% · Trot 45% · Canter 28% · Gallop 3%`
+| Halt | `#B8D4C8` | No movement |
+| Walk | `#8FC4AD` | 4-beat, slow |
+| Trot | `#5AA88C` | 2-beat, regular |
+| Canter | `#2E8068` | 3-beat + float |
+| Gallop | `#034D3A` | 4-beat, full speed |
 
 ## Accessibility
 
-All text combinations must meet **WCAG AA** at minimum. Use purple deep or near
-black for any text on light backgrounds.
+All text combinations must meet **WCAG AA** at minimum.
 
 | Combination | Contrast | Rating |
 | --- | --- | --- |
-| `#4A2080` on white | 7.2:1 | AAA ✓ |
-| `#6B4A9A` on white | 4.6:1 | AA ✓ |
-| `#1E1128` on white | 17.8:1 | AAA ✓ |
-| `#9B7FC0` on white | 2.8:1 | Fail for text |
+| `#067A60` on white | 5.8:1 | AA ✓ |
+| `#034D3A` on white | 9.1:1 | AAA ✓ |
+| `#0F1F1A` on white | 16.2:1 | AAA ✓ |
+| `#7ACBB0` on white | 2.1:1 | Fail for text |
 
-`#9B7FC0` and the hero gradient are for graphic and decorative use only. Never
-use them for text.
+`#7ACBB0`, `#12C49A` and the hero gradient are for graphic and decorative use
+only. Never use them for body text.
 
 ## CSS variables
 
 ```css
 :root {
-  --purple-hero: #8B2FC9;
+  /* Primary — Sage green */
+  --sage-bright: #12C49A;
+  --sage-mid: #0B9A78;
+  --sage-deep: #067A60;
+  --sage-forest: #034D3A;
+  --sage-light: #7ACBB0;
+  --sage-tint: #E8F5F0;
+  --sage-tint-2: #D4EDE4;
+  /* Secondary — Purple */
   --purple-deep: #4A2080;
   --purple-mid: #6B4A9A;
   --purple-light: #9B7FC0;
   --purple-tint: #F0EAF8;
   --purple-tint-2: #E8DDF5;
-  --near-black: #1E1128;
-  --body-text: #3D2B52;
-  --mid-grey: #7A6A8A;
-  --warm-white: #F7F4FC;
+  /* Neutrals */
+  --near-black: #0F1F1A;
+  --body-text: #1E3A32;
+  --mid-grey: #5C7268;
+  --warm-white: #F5FAF8;
   --white: #FFFFFF;
-  --border: #E2D8F0;
-  --gradient-hero: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);
-  --gradient-subtle: linear-gradient(135deg, #9B7FC0 0%, #6B4A9A 100%);
+  --border: #D8E8E2;
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
+  --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
+  --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
 }
 ```

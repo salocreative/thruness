@@ -1,23 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  --purple-hero: #8B2FC9;
+  /* Primary — Sage green */
+  --sage-bright: #12C49A;
+  --sage-mid: #0B9A78;
+  --sage-deep: #067A60;
+  --sage-forest: #034D3A;
+  --sage-light: #7ACBB0;
+  --sage-tint: #E8F5F0;
+  --sage-tint-2: #D4EDE4;
+  /* Secondary — Purple (use sparingly) */
   --purple-deep: #4A2080;
   --purple-mid: #6B4A9A;
   --purple-light: #9B7FC0;
   --purple-tint: #F0EAF8;
   --purple-tint-2: #E8DDF5;
-  --near-black: #1E1128;
-  --body-text: #3D2B52;
-  --mid-grey: #7A6A8A;
-  --warm-white: #F7F4FC;
+  /* Neutrals — green-tinted */
+  --near-black: #0F1F1A;
+  --body-text: #1E3A32;
+  --mid-grey: #5C7268;
+  --warm-white: #F5FAF8;
   --white: #FFFFFF;
-  --border: #E2D8F0;
-  --gradient-hero: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);
-  --gradient-subtle: linear-gradient(135deg, #9B7FC0 0%, #6B4A9A 100%);
-  --shadow-sm: 0 1px 3px rgba(74,32,128,0.08);
-  --shadow-md: 0 4px 16px rgba(74,32,128,0.12);
-  --shadow-lg: 0 8px 32px rgba(74,32,128,0.16);
+  --border: #D8E8E2;
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
+  --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
+  --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
+  --shadow-sm: 0 1px 3px rgba(3,77,58,0.08);
+  --shadow-md: 0 4px 16px rgba(3,77,58,0.12);
+  --shadow-lg: 0 8px 32px rgba(3,77,58,0.16);
   --radius: 12px;
   --radius-sm: 8px;
   --sidebar-width: 240px;
@@ -110,8 +121,8 @@ nav a:hover {
 
 nav a.active {
   color: var(--white);
-  border-left-color: var(--purple-light);
-  background: rgba(155,127,192,0.12);
+  border-left-color: var(--sage-light);
+  background: rgba(18,196,154,0.12);
 }
 
 nav a .icon { opacity: 0.7; font-size: 15px; width: 18px; text-align: center; }
@@ -141,7 +152,7 @@ nav a.active .icon { opacity: 1; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--purple-mid);
+  color: var(--sage-mid);
   margin-bottom: 8px;
 }
 
@@ -171,7 +182,7 @@ nav a.active .icon { opacity: 1; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--purple-mid);
+  color: var(--sage-mid);
   margin-bottom: 16px;
 }
 
@@ -214,8 +225,8 @@ nav a.active .icon { opacity: 1; }
 
 /* ── CALLOUT ── */
 .callout {
-  background: var(--purple-tint);
-  border-left: 3px solid var(--purple-mid);
+  background: var(--sage-tint);
+  border-left: 3px solid var(--sage-mid);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 18px 22px;
   font-size: 15px;
@@ -360,18 +371,19 @@ nav a.active .icon { opacity: 1; }
 }
 .btn svg { width: 16px; height: 16px; stroke-width: 2; flex-shrink: 0; }
 
-.btn-primary { background: var(--purple-deep); color: var(--white); }
-.btn-primary:hover { background: var(--purple-mid); }
-.btn-secondary { background: transparent; color: var(--purple-deep); border: 1.5px solid var(--purple-deep); }
-.btn-secondary:hover { background: var(--purple-tint); }
+.btn-primary { background: var(--sage-deep); color: var(--white); }
+.btn-primary:hover { background: var(--sage-mid); }
+.btn-secondary { background: transparent; color: var(--sage-deep); border: 1.5px solid var(--sage-deep); }
+.btn-secondary:hover { background: var(--sage-tint); }
 .btn-ghost { background: transparent; color: var(--mid-grey); border: 1px solid var(--border); }
-.btn-ghost:hover { border-color: var(--purple-light); color: var(--purple-mid); }
+.btn-ghost:hover { border-color: var(--sage-light); color: var(--sage-mid); }
 
 .badge {
   display: inline-block; padding: 3px 10px; border-radius: 20px;
   font-size: 11px; font-weight: 700;
 }
 
+.badge-sage { background: var(--sage-tint-2); color: var(--sage-forest); }
 .badge-purple { background: var(--purple-tint-2); color: var(--purple-deep); }
 .badge-green { background: #E6F4EA; color: #1b5e20; }
 .badge-amber { background: #FFF3CD; color: #7a4a00; }

@@ -27,7 +27,7 @@
       width: 100%;
       max-width: 280px;
     }
-    .input-demo:focus { border-color: var(--purple-mid); }
+    .input-demo:focus { border-color: var(--sage-mid); }
     .app-card {
       background: var(--white);
       border: 1px solid var(--border);
@@ -49,13 +49,13 @@
       background: var(--white);
       transition: border-color 0.15s, transform 0.15s;
     }
-    .icon-cell:hover { border-color: var(--purple-light); transform: translateY(-1px); }
-    .icon-cell svg { width: 26px; height: 26px; color: var(--purple-deep); stroke-width: 2; }
+    .icon-cell:hover { border-color: var(--sage-light); transform: translateY(-1px); }
+    .icon-cell svg { width: 26px; height: 26px; color: var(--sage-deep); stroke-width: 2; }
     .icon-cell .icon-label { font-size: 11px; font-family: monospace; color: var(--mid-grey); }
 
     .size-row { display: flex; gap: 28px; align-items: flex-end; flex-wrap: wrap; }
     .size-cell { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-    .size-cell svg { color: var(--purple-deep); stroke-width: 2; }
+    .size-cell svg { color: var(--sage-deep); stroke-width: 2; }
     .size-cell .size-label { font-size: 11px; color: var(--mid-grey); font-family: monospace; }
   </style>
 </head>
@@ -83,11 +83,11 @@
               <table style="font-size:12px; width:100%; border-collapse:collapse;">
                 <tr>
                   <td style="padding:6px 12px 6px 0; font-weight:700; color:var(--near-black); width:120px;">Primary</td>
-                  <td style="padding:6px 0; color:var(--mid-grey);">Background #4A2080, white text. Main CTA. One per screen.</td>
+                  <td style="padding:6px 0; color:var(--mid-grey);">Background #067A60 (Sage deep), white text. Main CTA. One per screen.</td>
                 </tr>
                 <tr>
                   <td style="padding:6px 12px 6px 0; font-weight:700; color:var(--near-black);">Secondary</td>
-                  <td style="padding:6px 0; color:var(--mid-grey);">Transparent, #4A2080 border and text. Supporting actions.</td>
+                  <td style="padding:6px 0; color:var(--mid-grey);">Transparent, #067A60 border and text. Supporting actions.</td>
                 </tr>
                 <tr>
                   <td style="padding:6px 12px 6px 0; font-weight:700; color:var(--near-black);">Ghost</td>
@@ -102,8 +102,8 @@
           <div class="section-label">Badges and labels</div>
           <div class="card">
             <div class="component-row">
-              <span class="badge badge-purple">Canter</span>
-              <span class="badge badge-purple">Trot</span>
+              <span class="badge badge-sage">Canter</span>
+              <span class="badge badge-sage">Trot</span>
               <span class="badge badge-green">Session saved</span>
               <span class="badge badge-amber">Calibration needed</span>
             </div>
@@ -113,20 +113,20 @@
         <div class="section">
           <div class="section-label">Gait bar</div>
           <div class="card" style="max-width:480px;">
-            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--purple-mid);margin-bottom:8px;">Wednesday · 45 min</div>
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--sage-mid);margin-bottom:8px;">Wednesday · 45 min</div>
             <div class="gait-bar" style="height:12px; margin-bottom:12px;">
-              <div class="gait-seg" style="background:#8FA8C8; width:6%;"></div>
-              <div class="gait-seg" style="background:#5B8DB8; width:18%;"></div>
-              <div class="gait-seg" style="background:#2E6EA6; width:45%;"></div>
-              <div class="gait-seg" style="background:#6B4A9A; width:28%;"></div>
-              <div class="gait-seg" style="background:#4A2080; width:3%;"></div>
+              <div class="gait-seg" style="background:#B8D4C8; width:6%;"></div>
+              <div class="gait-seg" style="background:#8FC4AD; width:18%;"></div>
+              <div class="gait-seg" style="background:#5AA88C; width:45%;"></div>
+              <div class="gait-seg" style="background:#2E8068; width:28%;"></div>
+              <div class="gait-seg" style="background:#034D3A; width:3%;"></div>
             </div>
             <div style="display:flex;gap:14px;flex-wrap:wrap;">
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#8FA8C8;display:inline-block;"></span>Halt 6%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#5B8DB8;display:inline-block;"></span>Walk 18%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#2E6EA6;display:inline-block;"></span>Trot 45%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#6B4A9A;display:inline-block;"></span>Canter 28%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#4A2080;display:inline-block;"></span>Gallop 3%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#B8D4C8;display:inline-block;"></span>Halt 6%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#8FC4AD;display:inline-block;"></span>Walk 18%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#5AA88C;display:inline-block;"></span>Trot 45%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#2E8068;display:inline-block;"></span>Canter 28%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#034D3A;display:inline-block;"></span>Gallop 3%</span>
             </div>
           </div>
         </div>
@@ -134,16 +134,16 @@
         <div class="section">
           <div class="section-label">Session card</div>
           <div class="app-card">
-            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--purple-mid);margin-bottom:6px;">Wednesday · Morning hack</div>
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--sage-mid);margin-bottom:6px;">Wednesday · Morning hack</div>
             <div style="font-family:var(--font-display);font-size:20px;color:var(--near-black);margin-bottom:8px;line-height:1.2;">Something shifted in that last canter.</div>
             <div class="gait-bar" style="margin-bottom:10px;">
-              <div class="gait-seg" style="background:#5B8DB8;width:20%;"></div>
-              <div class="gait-seg" style="background:#2E6EA6;width:48%;"></div>
-              <div class="gait-seg" style="background:#6B4A9A;width:32%;"></div>
+              <div class="gait-seg" style="background:#8FC4AD;width:20%;"></div>
+              <div class="gait-seg" style="background:#5AA88C;width:48%;"></div>
+              <div class="gait-seg" style="background:#2E8068;width:32%;"></div>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:center;">
               <div style="font-size:12px;color:var(--mid-grey);">45 min · Bella</div>
-              <span style="font-size:12px;color:var(--purple-mid);font-weight:700;">View →</span>
+              <span style="font-size:12px;color:var(--sage-mid);font-weight:700;">View →</span>
             </div>
           </div>
         </div>
@@ -167,7 +167,7 @@
 
         <div class="section">
           <div class="section-label">Iconography</div>
-          <p>We use <a href="https://lucide.dev" target="_blank" rel="noopener" style="color:var(--purple-mid);">Lucide</a> for all UI iconography. A single open-source set keeps us consistent across the app, marketing site and product UI. Default stroke width is 2; icons inherit colour from their parent text by default.</p>
+          <p>We use <a href="https://lucide.dev" target="_blank" rel="noopener" style="color:var(--sage-mid);">Lucide</a> for all UI iconography. A single open-source set keeps us consistent across the app, marketing site and product UI. Default stroke width is 2; icons inherit colour from their parent text by default.</p>
 
           <div class="card" style="margin-top: 18px;">
             <div class="icon-grid">
@@ -188,7 +188,7 @@
               <div class="icon-cell"><i data-lucide="check"></i><div class="icon-label">check</div></div>
               <div class="icon-cell"><i data-lucide="chevron-right"></i><div class="icon-label">chevron-right</div></div>
             </div>
-            <div style="font-size:12px; color:var(--mid-grey); margin-top:14px;">A starter set. Browse the full library at <a href="https://lucide.dev/icons" target="_blank" rel="noopener" style="color:var(--purple-mid);">lucide.dev/icons</a>.</div>
+            <div style="font-size:12px; color:var(--mid-grey); margin-top:14px;">A starter set. Browse the full library at <a href="https://lucide.dev/icons" target="_blank" rel="noopener" style="color:var(--sage-mid);">lucide.dev/icons</a>.</div>
           </div>
 
           <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
@@ -205,10 +205,10 @@
             <div class="card">
               <div class="section-label" style="margin-bottom:14px;">Colour and weight</div>
               <div style="display:flex; gap:18px; align-items:center; margin-bottom:14px;">
-                <i data-lucide="heart" style="width:28px;height:28px;color:var(--purple-deep);"></i>
-                <i data-lucide="heart" style="width:28px;height:28px;color:var(--purple-mid);"></i>
+                <i data-lucide="heart" style="width:28px;height:28px;color:var(--sage-deep);"></i>
+                <i data-lucide="heart" style="width:28px;height:28px;color:var(--sage-mid);"></i>
                 <i data-lucide="heart" style="width:28px;height:28px;color:var(--mid-grey);"></i>
-                <i data-lucide="heart" style="width:28px;height:28px;color:#B33A22;"></i>
+                <i data-lucide="heart" style="width:28px;height:28px;color:var(--purple-mid);"></i>
               </div>
               <p style="font-size:12px; color:var(--mid-grey); line-height:1.55;">Icons inherit colour from their parent text. Stroke width <strong style="color:var(--near-black);">2</strong> is the default. Use <strong style="color:var(--near-black);">1.5</strong> at sizes 28px+ for a softer feel. Never recolour an icon to clash with its surface.</p>
             </div>
@@ -216,7 +216,7 @@
 
           <div class="card" style="margin-top:16px;">
             <div class="section-label" style="margin-bottom:10px;">Usage</div>
-            <pre style="font-size:12px; font-family:monospace; background:var(--purple-tint); color:var(--near-black); padding:14px 16px; border-radius:var(--radius-sm); overflow-x:auto; line-height:1.55;">&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;
+            <pre style="font-size:12px; font-family:monospace; background:var(--sage-tint); color:var(--near-black); padding:14px 16px; border-radius:var(--radius-sm); overflow-x:auto; line-height:1.55;">&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;
 
 &lt;i data-lucide="play"&gt;&lt;/i&gt;
 
@@ -229,18 +229,18 @@
         <div class="section">
           <div class="section-label">Surface treatments</div>
           <div class="surface-demo" style="background:var(--warm-white); border:1px solid var(--border);">
-            <div style="font-size:12px;color:var(--mid-grey);">Warm white #F7F4FC — Default page and app background</div>
+            <div style="font-size:12px;color:var(--mid-grey);">Warm white #F5FAF8 — Default page and app background</div>
           </div>
           <div class="surface-demo" style="background:var(--white); border:1px solid var(--border);">
             <div style="font-size:12px;color:var(--mid-grey);">White #FFFFFF — Cards, modals, input fields</div>
           </div>
-          <div class="surface-demo" style="background:var(--purple-tint);">
-            <div style="font-size:12px;color:var(--purple-mid);">Purple tint #F0EAF8 — Callouts, selected states, highlights</div>
+          <div class="surface-demo" style="background:var(--sage-tint);">
+            <div style="font-size:12px;color:var(--sage-mid);">Sage tint #E8F5F0 — Callouts, selected states, highlights</div>
           </div>
           <div class="surface-demo" style="background:var(--near-black);">
-            <div style="font-size:12px;color:rgba(255,255,255,0.5);">Near black #1E1128 — Sidebar, active ride screen, dark mode</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.5);">Near black #0F1F1A — Sidebar, active ride screen, dark mode</div>
           </div>
-          <div class="surface-demo" style="background: linear-gradient(135deg, #C040D0 0%, #7B2FC0 50%, #4A1A8A 100%);">
+          <div class="surface-demo" style="background: var(--gradient-hero);">
             <div style="font-size:12px;color:rgba(255,255,255,0.8);">Hero gradient — Splash, app icon, marketing moments only</div>
           </div>
         </div>
