@@ -41,11 +41,11 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 Horizontal stacked bar showing time spent in each gait across a session. 10–12px
 tall, 6px radius, no gaps between segments. Colours follow the gait palette:
 
-- Halt `#B8D4C8`
-- Walk `#8FC4AD`
-- Trot `#5AA88C`
-- Canter `#2E8068`
-- Gallop `#034D3A`
+- Halt `#9BA8A4` (Stone)
+- Walk `#5A9FC8` (Sky)
+- Trot `#0B9A78` (Sage)
+- Canter `#D4923A` (Amber)
+- Gallop `#6B4A9A` (Plum)
 
 ## Session card
 

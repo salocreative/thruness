@@ -189,38 +189,43 @@
 
         <div class="section">
           <div class="section-label">Gait colours</div>
-          <p>Used in the app for gait state indicators. A green scale — intensity maps to speed. Not used for text — graphic and UI fill elements only.</p>
+          <p>Each gait has its own hue so riders can read a session bar or live indicator at a glance. Colours are calm and muted — not neon — but spread across the spectrum for clear UI separation. Not used for text; graphic and UI fill elements only.</p>
           <div class="swatch-grid" style="margin-top: 16px;">
             <div class="swatch-item">
-              <div class="swatch-block" style="background:#B8D4C8;"></div>
+              <div class="swatch-block" style="background:#9BA8A4;"></div>
               <div class="swatch-name">Halt</div>
-              <div class="swatch-hex">#B8D4C8</div>
-              <div class="swatch-usage">No movement</div>
+              <div class="swatch-hex">#9BA8A4</div>
+              <div class="swatch-usage">Stone grey — no movement, neutral</div>
             </div>
             <div class="swatch-item">
-              <div class="swatch-block" style="background:#8FC4AD;"></div>
+              <div class="swatch-block" style="background:#5A9FC8;"></div>
               <div class="swatch-name">Walk</div>
-              <div class="swatch-hex">#8FC4AD</div>
-              <div class="swatch-usage">4-beat, slow</div>
+              <div class="swatch-hex">#5A9FC8</div>
+              <div class="swatch-usage">Sky blue — slow, cool, unhurried</div>
             </div>
             <div class="swatch-item">
-              <div class="swatch-block" style="background:#5AA88C;"></div>
+              <div class="swatch-block" style="background:#0B9A78;"></div>
               <div class="swatch-name">Trot</div>
-              <div class="swatch-hex">#5AA88C</div>
-              <div class="swatch-usage">2-beat, regular</div>
+              <div class="swatch-hex">#0B9A78</div>
+              <div class="swatch-usage">Sage mid — brand anchor, regular work</div>
             </div>
             <div class="swatch-item">
-              <div class="swatch-block" style="background:#2E8068;"></div>
+              <div class="swatch-block" style="background:#D4923A;"></div>
               <div class="swatch-name">Canter</div>
-              <div class="swatch-hex">#2E8068</div>
-              <div class="swatch-usage">3-beat + float</div>
+              <div class="swatch-hex">#D4923A</div>
+              <div class="swatch-usage">Amber — warm lift, rising energy</div>
             </div>
             <div class="swatch-item">
-              <div class="swatch-block" style="background:#034D3A;"></div>
+              <div class="swatch-block" style="background:#6B4A9A;"></div>
               <div class="swatch-name">Gallop</div>
-              <div class="swatch-hex">#034D3A</div>
-              <div class="swatch-usage">4-beat, full speed</div>
+              <div class="swatch-hex">#6B4A9A</div>
+              <div class="swatch-usage">Plum — peak speed, secondary brand accent</div>
             </div>
+          </div>
+
+          <div class="card" style="margin-top: 20px; max-width: 640px;">
+            <div class="section-label" style="margin-bottom: 10px;">Why these colours</div>
+            <p style="font-size: 13px; max-width: none; line-height: 1.65;">The previous green-only scale was too close in hue for small UI elements. This set spreads gaits across grey → blue → green → amber → purple so each reads distinctly in a bar, badge or live indicator — including for riders with colour vision deficiency, where hue difference matters more than shade alone.</p>
           </div>
 
           <div style="margin-top: 24px;">
@@ -228,18 +233,18 @@
             <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; max-width: 480px;">
               <div style="font-size: 12px; color: var(--mid-grey); margin-bottom: 10px;">45 min schooling session</div>
               <div class="gait-bar">
-                <div class="gait-seg" style="background:#B8D4C8; width:6%;"></div>
-                <div class="gait-seg" style="background:#8FC4AD; width:18%;"></div>
-                <div class="gait-seg" style="background:#5AA88C; width:45%;"></div>
-                <div class="gait-seg" style="background:#2E8068; width:28%;"></div>
-                <div class="gait-seg" style="background:#034D3A; width:3%;"></div>
+                <div class="gait-seg" style="background:#9BA8A4; width:6%;"></div>
+                <div class="gait-seg" style="background:#5A9FC8; width:18%;"></div>
+                <div class="gait-seg" style="background:#0B9A78; width:45%;"></div>
+                <div class="gait-seg" style="background:#D4923A; width:28%;"></div>
+                <div class="gait-seg" style="background:#6B4A9A; width:3%;"></div>
               </div>
               <div style="display:flex; gap:12px; margin-top:10px; flex-wrap:wrap;">
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#B8D4C8;">■</span> Halt 6%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#8FC4AD;">■</span> Walk 18%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#5AA88C;">■</span> Trot 45%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#2E8068;">■</span> Canter 28%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#034D3A;">■</span> Gallop 3%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#9BA8A4;">■</span> Halt 6%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#5A9FC8;">■</span> Walk 18%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#0B9A78;">■</span> Trot 45%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#D4923A;">■</span> Canter 28%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#6B4A9A;">■</span> Gallop 3%</span>
               </div>
             </div>
           </div>
@@ -300,7 +305,7 @@
               <tbody>
                 <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 50</td><td style="padding:8px 12px; font-family:monospace;">#E8F5F0</td><td style="padding:8px 12px; color:var(--mid-grey);">Lightest tint, callouts</td></tr>
                 <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 100</td><td style="padding:8px 12px; font-family:monospace;">#D4EDE4</td><td style="padding:8px 12px; color:var(--mid-grey);">Badges, selected fills</td></tr>
-                <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 200</td><td style="padding:8px 12px; font-family:monospace;">#A8D9C8</td><td style="padding:8px 12px; color:var(--mid-grey);">Halt gait, subtle charts</td></tr>
+                <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 200</td><td style="padding:8px 12px; font-family:monospace;">#A8D9C8</td><td style="padding:8px 12px; color:var(--mid-grey);">Subtle charts, soft fills</td></tr>
                 <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 300</td><td style="padding:8px 12px; font-family:monospace;">#7ACBB0</td><td style="padding:8px 12px; color:var(--mid-grey);">Light accent, hover borders</td></tr>
                 <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 400</td><td style="padding:8px 12px; font-family:monospace;">#12C49A</td><td style="padding:8px 12px; color:var(--mid-grey);">Gradient top, energetic accent</td></tr>
                 <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0; font-weight:700;">Sage 500</td><td style="padding:8px 12px; font-family:monospace;">#0B9A78</td><td style="padding:8px 12px; color:var(--mid-grey);">Links, eyebrows, hover states</td></tr>

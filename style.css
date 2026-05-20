@@ -26,6 +26,12 @@
   --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
   --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
   --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
+  /* Gait colours — distinct hues for clear UI differentiation */
+  --gait-halt: #9BA8A4;
+  --gait-walk: #5A9FC8;
+  --gait-trot: #0B9A78;
+  --gait-canter: #D4923A;
+  --gait-gallop: #6B4A9A;
   --shadow-sm: 0 1px 3px rgba(3,77,58,0.08);
   --shadow-md: 0 4px 16px rgba(3,77,58,0.12);
   --shadow-lg: 0 8px 32px rgba(3,77,58,0.16);

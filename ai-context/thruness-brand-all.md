@@ -1,7 +1,6 @@
 # Thruness — Brand Guidelines (Full)
 
 _Generated from the Thruness brand guidelines, version 1.0, May 2026._
-_Prepared by Salo Creative._
 
 ---
 
@@ -251,7 +250,7 @@ Reference vertical master: `logos/Thruness-Gradient-Sage.png`
 | --- | --- | --- |
 | Sage 50 | `#E8F5F0` | Lightest tint, callouts |
 | Sage 100 | `#D4EDE4` | Badges, selected fills |
-| Sage 200 | `#A8D9C8` | Halt gait, subtle charts |
+| Sage 200 | `#A8D9C8` | Subtle charts, soft fills |
 | Sage 300 | `#7ACBB0` | Light accent, hover borders |
 | Sage 400 | `#12C49A` | Gradient top, energetic accent |
 | Sage 500 | `#0B9A78` | Links, eyebrows, hover states |
@@ -262,15 +261,29 @@ Reference vertical master: `logos/Thruness-Gradient-Sage.png`
 
 ## Gait colours
 
-Green scale — intensity maps to speed. Not used for text.
+Each gait has its own hue for clear UI separation in bars, badges and live
+indicators. Spread across the spectrum — not a single green ramp — so riders can
+read sessions at a glance. Not used for text.
 
-| Gait | Hex | Description |
-| --- | --- | --- |
-| Halt | `#B8D4C8` | No movement |
-| Walk | `#8FC4AD` | 4-beat, slow |
-| Trot | `#5AA88C` | 2-beat, regular |
-| Canter | `#2E8068` | 3-beat + float |
-| Gallop | `#034D3A` | 4-beat, full speed |
+| Gait | Hex | Name | Use |
+| --- | --- | --- | --- |
+| Halt | `#9BA8A4` | Stone | No movement — neutral grey |
+| Walk | `#5A9FC8` | Sky | Slow, cool, unhurried |
+| Trot | `#0B9A78` | Sage | Brand anchor — regular work |
+| Canter | `#D4923A` | Amber | Warm lift — rising energy |
+| Gallop | `#6B4A9A` | Plum | Peak speed — secondary brand accent |
+
+The previous green-only scale was too close in hue for small UI elements. This
+set uses grey → blue → green → amber → purple for distinct readability, including
+for riders with colour vision deficiency.
+
+```css
+--gait-halt: #9BA8A4;
+--gait-walk: #5A9FC8;
+--gait-trot: #0B9A78;
+--gait-canter: #D4923A;
+--gait-gallop: #6B4A9A;
+```
 
 ## Accessibility
 
@@ -540,11 +553,11 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 Horizontal stacked bar showing time spent in each gait across a session. 10–12px
 tall, 6px radius, no gaps between segments. Colours follow the gait palette:
 
-- Halt `#B8D4C8`
-- Walk `#8FC4AD`
-- Trot `#5AA88C`
-- Canter `#2E8068`
-- Gallop `#034D3A`
+- Halt `#9BA8A4` (Stone)
+- Walk `#5A9FC8` (Sky)
+- Trot `#0B9A78` (Sage)
+- Canter `#D4923A` (Amber)
+- Gallop `#6B4A9A` (Plum)
 
 ## Session card
 
