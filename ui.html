@@ -115,19 +115,36 @@
           <div class="card" style="max-width:480px;">
             <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--sage-mid);margin-bottom:8px;">Wednesday · 45 min</div>
             <div class="gait-bar" style="height:12px; margin-bottom:12px;">
-              <div class="gait-seg" style="background:#9BA8A4; width:6%;"></div>
-              <div class="gait-seg" style="background:#5A9FC8; width:18%;"></div>
-              <div class="gait-seg" style="background:#0B9A78; width:45%;"></div>
-              <div class="gait-seg" style="background:#D4923A; width:28%;"></div>
-              <div class="gait-seg" style="background:#6B4A9A; width:3%;"></div>
+              <div class="gait-seg" style="background:var(--gait-halt); width:6%;"></div>
+              <div class="gait-seg" style="background:var(--gait-walk); width:18%;"></div>
+              <div class="gait-seg" style="background:var(--gait-trot); width:45%;"></div>
+              <div class="gait-seg" style="background:var(--gait-canter); width:28%;"></div>
+              <div class="gait-seg" style="background:var(--gait-gallop); width:3%;"></div>
             </div>
             <div style="display:flex;gap:14px;flex-wrap:wrap;">
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#9BA8A4;display:inline-block;"></span>Halt 6%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#5A9FC8;display:inline-block;"></span>Walk 18%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#0B9A78;display:inline-block;"></span>Trot 45%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#D4923A;display:inline-block;"></span>Canter 28%</span>
-              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:#6B4A9A;display:inline-block;"></span>Gallop 3%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--gait-halt);display:inline-block;"></span>Halt 6%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--gait-walk);display:inline-block;"></span>Walk 18%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--gait-trot);display:inline-block;"></span>Trot 45%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--gait-canter);display:inline-block;"></span>Canter 28%</span>
+              <span style="font-size:12px;color:var(--mid-grey);display:flex;align-items:center;gap:5px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--gait-gallop);display:inline-block;"></span>Gallop 3%</span>
             </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-label">Gait shade scales</div>
+          <div class="card" style="max-width:480px;">
+            <div style="display:flex;gap:8px;margin-bottom:12px;">
+              <span style="flex:1;text-align:center;font-size:11px;color:var(--mid-grey);">Light</span>
+              <span style="flex:1;text-align:center;font-size:11px;color:var(--mid-grey);">Base</span>
+              <span style="flex:1;text-align:center;font-size:11px;color:var(--mid-grey);">Dark</span>
+            </div>
+            <div style="display:flex;gap:6px;margin-bottom:8px;">
+              <span style="flex:1;height:28px;border-radius:4px;background:var(--gait-trot-light);"></span>
+              <span style="flex:1;height:28px;border-radius:4px;background:var(--gait-trot);"></span>
+              <span style="flex:1;height:28px;border-radius:4px;background:var(--gait-trot-dark);"></span>
+            </div>
+            <div style="font-size:12px;color:var(--mid-grey);">Trot scale — use light for badge fills, base for bars, dark for hover and labels.</div>
           </div>
         </div>
 
@@ -137,9 +154,9 @@
             <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--sage-mid);margin-bottom:6px;">Wednesday · Morning hack</div>
             <div style="font-family:var(--font-display);font-size:20px;color:var(--near-black);margin-bottom:8px;line-height:1.2;">Something shifted in that last canter.</div>
             <div class="gait-bar" style="margin-bottom:10px;">
-              <div class="gait-seg" style="background:#5A9FC8;width:20%;"></div>
-              <div class="gait-seg" style="background:#0B9A78;width:48%;"></div>
-              <div class="gait-seg" style="background:#D4923A;width:32%;"></div>
+              <div class="gait-seg" style="background:var(--gait-walk);width:20%;"></div>
+              <div class="gait-seg" style="background:var(--gait-trot);width:48%;"></div>
+              <div class="gait-seg" style="background:var(--gait-canter);width:32%;"></div>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:center;">
               <div style="font-size:12px;color:var(--mid-grey);">45 min · Bella</div>

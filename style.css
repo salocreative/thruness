@@ -27,11 +27,21 @@
   --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
   --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
   /* Gait colours — distinct hues for clear UI differentiation */
+  --gait-halt-light: #D4DBD8;
   --gait-halt: #9BA8A4;
+  --gait-halt-dark: #6E7A76;
+  --gait-walk-light: #B8D9EC;
   --gait-walk: #5A9FC8;
+  --gait-walk-dark: #3A7FA8;
+  --gait-trot-light: #A8D9C8;
   --gait-trot: #0B9A78;
+  --gait-trot-dark: #067A60;
+  --gait-canter-light: #F0D4A8;
   --gait-canter: #D4923A;
+  --gait-canter-dark: #9E6218;
+  --gait-gallop-light: #D4C8E8;
   --gait-gallop: #6B4A9A;
+  --gait-gallop-dark: #4A2080;
   --shadow-sm: 0 1px 3px rgba(3,77,58,0.08);
   --shadow-md: 0 4px 16px rgba(3,77,58,0.12);
   --shadow-lg: 0 8px 32px rgba(3,77,58,0.16);

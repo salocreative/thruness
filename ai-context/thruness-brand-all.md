@@ -262,27 +262,37 @@ Reference vertical master: `logos/Thruness-Gradient-Sage.png`
 ## Gait colours
 
 Each gait has its own hue for clear UI separation in bars, badges and live
-indicators. Spread across the spectrum — not a single green ramp — so riders can
-read sessions at a glance. Not used for text.
+indicators. Each gait includes **light**, **base** and **dark** shades. Not used
+for text.
 
-| Gait | Hex | Name | Use |
-| --- | --- | --- | --- |
-| Halt | `#9BA8A4` | Stone | No movement — neutral grey |
-| Walk | `#5A9FC8` | Sky | Slow, cool, unhurried |
-| Trot | `#0B9A78` | Sage | Brand anchor — regular work |
-| Canter | `#D4923A` | Amber | Warm lift — rising energy |
-| Gallop | `#6B4A9A` | Plum | Peak speed — secondary brand accent |
+| Gait | Light | Base | Dark | Name |
+| --- | --- | --- | --- | --- |
+| Halt | `#D4DBD8` | `#9BA8A4` | `#6E7A76` | Stone |
+| Walk | `#B8D9EC` | `#5A9FC8` | `#3A7FA8` | Sky |
+| Trot | `#A8D9C8` | `#0B9A78` | `#067A60` | Sage |
+| Canter | `#F0D4A8` | `#D4923A` | `#9E6218` | Amber |
+| Gallop | `#D4C8E8` | `#6B4A9A` | `#4A2080` | Plum |
 
-The previous green-only scale was too close in hue for small UI elements. This
-set uses grey → blue → green → amber → purple for distinct readability, including
-for riders with colour vision deficiency.
+**Shade usage:** Light — badge backgrounds, chart fills, subtle highlights.
+Base — gait bars, live indicators, primary swatches. Dark — hover/active states,
+borders, legend labels on light surfaces.
 
 ```css
+--gait-halt-light: #D4DBD8;
 --gait-halt: #9BA8A4;
+--gait-halt-dark: #6E7A76;
+--gait-walk-light: #B8D9EC;
 --gait-walk: #5A9FC8;
+--gait-walk-dark: #3A7FA8;
+--gait-trot-light: #A8D9C8;
 --gait-trot: #0B9A78;
+--gait-trot-dark: #067A60;
+--gait-canter-light: #F0D4A8;
 --gait-canter: #D4923A;
+--gait-canter-dark: #9E6218;
+--gait-gallop-light: #D4C8E8;
 --gait-gallop: #6B4A9A;
+--gait-gallop-dark: #4A2080;
 ```
 
 ## Accessibility
@@ -328,6 +338,12 @@ only. Never use them for body text.
   --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
   --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
   --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
+  /* Gait colours */
+  --gait-halt-light: #D4DBD8; --gait-halt: #9BA8A4; --gait-halt-dark: #6E7A76;
+  --gait-walk-light: #B8D9EC; --gait-walk: #5A9FC8; --gait-walk-dark: #3A7FA8;
+  --gait-trot-light: #A8D9C8; --gait-trot: #0B9A78; --gait-trot-dark: #067A60;
+  --gait-canter-light: #F0D4A8; --gait-canter: #D4923A; --gait-canter-dark: #9E6218;
+  --gait-gallop-light: #D4C8E8; --gait-gallop: #6B4A9A; --gait-gallop-dark: #4A2080;
 }
 ```
 
@@ -551,13 +567,14 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 ## Gait bar
 
 Horizontal stacked bar showing time spent in each gait across a session. 10–12px
-tall, 6px radius, no gaps between segments. Colours follow the gait palette:
+tall, 6px radius, no gaps between segments. Use the **base** shade in bars; use
+**light** for badge backgrounds and **dark** for hover/active states.
 
-- Halt `#9BA8A4` (Stone)
-- Walk `#5A9FC8` (Sky)
-- Trot `#0B9A78` (Sage)
-- Canter `#D4923A` (Amber)
-- Gallop `#6B4A9A` (Plum)
+- Halt `#9BA8A4` (light `#D4DBD8`, dark `#6E7A76`)
+- Walk `#5A9FC8` (light `#B8D9EC`, dark `#3A7FA8`)
+- Trot `#0B9A78` (light `#A8D9C8`, dark `#067A60`)
+- Canter `#D4923A` (light `#F0D4A8`, dark `#9E6218`)
+- Gallop `#6B4A9A` (light `#D4C8E8`, dark `#4A2080`)
 
 ## Session card
 

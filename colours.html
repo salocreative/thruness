@@ -7,6 +7,27 @@
   <link rel="icon" type="image/png" href="logos/Thruness-Profile-Green.png">
   <link rel="apple-touch-icon" href="logos/Thruness-Profile-Green.png">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .gait-scale { display: grid; gap: 14px; margin-top: 16px; }
+    .gait-scale-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--white);
+    }
+    .gait-scale-head {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+    }
+    .gait-scale-name { font-size: 13px; font-weight: 700; color: var(--near-black); }
+    .gait-scale-desc { font-size: 12px; color: var(--mid-grey); }
+    .gait-scale-shades { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .gait-shade { padding: 14px 16px; }
+    .gait-shade-block { height: 44px; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.06); margin-bottom: 8px; }
+    .gait-shade-label { font-size: 11px; font-weight: 700; color: var(--near-black); margin-bottom: 2px; }
+    .gait-shade-hex { font-size: 11px; font-family: monospace; color: var(--mid-grey); }
+  </style>
 </head>
 <body>
   <div id="mobileNavContainer"></div>
@@ -189,38 +210,69 @@
 
         <div class="section">
           <div class="section-label">Gait colours</div>
-          <p>Each gait has its own hue so riders can read a session bar or live indicator at a glance. Colours are calm and muted — not neon — but spread across the spectrum for clear UI separation. Not used for text; graphic and UI fill elements only.</p>
-          <div class="swatch-grid" style="margin-top: 16px;">
-            <div class="swatch-item">
-              <div class="swatch-block" style="background:#9BA8A4;"></div>
-              <div class="swatch-name">Halt</div>
-              <div class="swatch-hex">#9BA8A4</div>
-              <div class="swatch-usage">Stone grey — no movement, neutral</div>
+          <p>Each gait has its own hue so riders can read a session bar or live indicator at a glance. Colours are calm and muted — not neon — but spread across the spectrum for clear UI separation. Each gait includes a light, base and dark shade for backgrounds, bars and active states. Not used for text; graphic and UI fill elements only.</p>
+
+          <div class="gait-scale">
+            <div class="gait-scale-item">
+              <div class="gait-scale-head">
+                <div class="gait-scale-name">Halt — Stone</div>
+                <div class="gait-scale-desc">No movement, neutral</div>
+              </div>
+              <div class="gait-scale-shades">
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#D4DBD8;"></div><div class="gait-shade-label">Light</div><div class="gait-shade-hex">#D4DBD8</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#9BA8A4;"></div><div class="gait-shade-label">Base</div><div class="gait-shade-hex">#9BA8A4</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#6E7A76;"></div><div class="gait-shade-label">Dark</div><div class="gait-shade-hex">#6E7A76</div></div>
+              </div>
             </div>
-            <div class="swatch-item">
-              <div class="swatch-block" style="background:#5A9FC8;"></div>
-              <div class="swatch-name">Walk</div>
-              <div class="swatch-hex">#5A9FC8</div>
-              <div class="swatch-usage">Sky blue — slow, cool, unhurried</div>
+            <div class="gait-scale-item">
+              <div class="gait-scale-head">
+                <div class="gait-scale-name">Walk — Sky</div>
+                <div class="gait-scale-desc">Slow, cool, unhurried</div>
+              </div>
+              <div class="gait-scale-shades">
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#B8D9EC;"></div><div class="gait-shade-label">Light</div><div class="gait-shade-hex">#B8D9EC</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#5A9FC8;"></div><div class="gait-shade-label">Base</div><div class="gait-shade-hex">#5A9FC8</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#3A7FA8;"></div><div class="gait-shade-label">Dark</div><div class="gait-shade-hex">#3A7FA8</div></div>
+              </div>
             </div>
-            <div class="swatch-item">
-              <div class="swatch-block" style="background:#0B9A78;"></div>
-              <div class="swatch-name">Trot</div>
-              <div class="swatch-hex">#0B9A78</div>
-              <div class="swatch-usage">Sage mid — brand anchor, regular work</div>
+            <div class="gait-scale-item">
+              <div class="gait-scale-head">
+                <div class="gait-scale-name">Trot — Sage</div>
+                <div class="gait-scale-desc">Brand anchor, regular work</div>
+              </div>
+              <div class="gait-scale-shades">
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#A8D9C8;"></div><div class="gait-shade-label">Light</div><div class="gait-shade-hex">#A8D9C8</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#0B9A78;"></div><div class="gait-shade-label">Base</div><div class="gait-shade-hex">#0B9A78</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#067A60;"></div><div class="gait-shade-label">Dark</div><div class="gait-shade-hex">#067A60</div></div>
+              </div>
             </div>
-            <div class="swatch-item">
-              <div class="swatch-block" style="background:#D4923A;"></div>
-              <div class="swatch-name">Canter</div>
-              <div class="swatch-hex">#D4923A</div>
-              <div class="swatch-usage">Amber — warm lift, rising energy</div>
+            <div class="gait-scale-item">
+              <div class="gait-scale-head">
+                <div class="gait-scale-name">Canter — Amber</div>
+                <div class="gait-scale-desc">Warm lift, rising energy</div>
+              </div>
+              <div class="gait-scale-shades">
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#F0D4A8;"></div><div class="gait-shade-label">Light</div><div class="gait-shade-hex">#F0D4A8</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#D4923A;"></div><div class="gait-shade-label">Base</div><div class="gait-shade-hex">#D4923A</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#9E6218;"></div><div class="gait-shade-label">Dark</div><div class="gait-shade-hex">#9E6218</div></div>
+              </div>
             </div>
-            <div class="swatch-item">
-              <div class="swatch-block" style="background:#6B4A9A;"></div>
-              <div class="swatch-name">Gallop</div>
-              <div class="swatch-hex">#6B4A9A</div>
-              <div class="swatch-usage">Plum — peak speed, secondary brand accent</div>
+            <div class="gait-scale-item">
+              <div class="gait-scale-head">
+                <div class="gait-scale-name">Gallop — Plum</div>
+                <div class="gait-scale-desc">Peak speed, secondary brand accent</div>
+              </div>
+              <div class="gait-scale-shades">
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#D4C8E8;"></div><div class="gait-shade-label">Light</div><div class="gait-shade-hex">#D4C8E8</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#6B4A9A;"></div><div class="gait-shade-label">Base</div><div class="gait-shade-hex">#6B4A9A</div></div>
+                <div class="gait-shade"><div class="gait-shade-block" style="background:#4A2080;"></div><div class="gait-shade-label">Dark</div><div class="gait-shade-hex">#4A2080</div></div>
+              </div>
             </div>
+          </div>
+
+          <div class="card" style="margin-top: 20px; max-width: 640px;">
+            <div class="section-label" style="margin-bottom: 10px;">Shade usage</div>
+            <p style="font-size: 13px; max-width: none; line-height: 1.65; margin-bottom: 0;"><strong style="color:var(--near-black);">Light</strong> — badge backgrounds, chart fills, subtle highlights. <strong style="color:var(--near-black);">Base</strong> — gait bars, live indicators, primary UI swatches. <strong style="color:var(--near-black);">Dark</strong> — hover/active states, borders, legend labels on light surfaces.</p>
           </div>
 
           <div class="card" style="margin-top: 20px; max-width: 640px;">
@@ -233,18 +285,18 @@
             <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; max-width: 480px;">
               <div style="font-size: 12px; color: var(--mid-grey); margin-bottom: 10px;">45 min schooling session</div>
               <div class="gait-bar">
-                <div class="gait-seg" style="background:#9BA8A4; width:6%;"></div>
-                <div class="gait-seg" style="background:#5A9FC8; width:18%;"></div>
-                <div class="gait-seg" style="background:#0B9A78; width:45%;"></div>
-                <div class="gait-seg" style="background:#D4923A; width:28%;"></div>
-                <div class="gait-seg" style="background:#6B4A9A; width:3%;"></div>
+                <div class="gait-seg" style="background:var(--gait-halt); width:6%;"></div>
+                <div class="gait-seg" style="background:var(--gait-walk); width:18%;"></div>
+                <div class="gait-seg" style="background:var(--gait-trot); width:45%;"></div>
+                <div class="gait-seg" style="background:var(--gait-canter); width:28%;"></div>
+                <div class="gait-seg" style="background:var(--gait-gallop); width:3%;"></div>
               </div>
               <div style="display:flex; gap:12px; margin-top:10px; flex-wrap:wrap;">
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#9BA8A4;">■</span> Halt 6%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#5A9FC8;">■</span> Walk 18%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#0B9A78;">■</span> Trot 45%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#D4923A;">■</span> Canter 28%</span>
-                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:#6B4A9A;">■</span> Gallop 3%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:var(--gait-halt);">■</span> Halt 6%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:var(--gait-walk);">■</span> Walk 18%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:var(--gait-trot);">■</span> Trot 45%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:var(--gait-canter);">■</span> Canter 28%</span>
+                <span style="font-size:11px; color:var(--mid-grey);"><span style="color:var(--gait-gallop);">■</span> Gallop 3%</span>
               </div>
             </div>
           </div>
