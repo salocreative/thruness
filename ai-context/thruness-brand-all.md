@@ -1,6 +1,3 @@
-# Thruness — Brand Guidelines (Full)
-
-_Generated from the Thruness brand guidelines, version 1.0, May 2026._
 
 ---
 
@@ -569,6 +566,10 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 Horizontal stacked bar showing time spent in each gait across a session. 10–12px
 tall, 6px radius, no gaps between segments. Use the **base** shade in bars; use
 **light** for badge backgrounds and **dark** for hover/active states.
+
+On the **active ride screen**, the current gait card and map marker use the base
+colour for the active gait. The session breakdown bar below shows all five gaits
+across the ride. Reference: `images/Thruness-App-Screens.png`.
 
 - Halt `#9BA8A4` (light `#D4DBD8`, dark `#6E7A76`)
 - Walk `#5A9FC8` (light `#B8D9EC`, dark `#3A7FA8`)

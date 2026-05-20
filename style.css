@@ -408,6 +408,26 @@ nav a.active .icon { opacity: 1; }
 .gait-bar { display: flex; border-radius: 6px; overflow: hidden; height: 10px; margin: 8px 0; }
 .gait-seg { height: 100%; }
 
+.app-screenshot-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+}
+.app-screenshot-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.app-screenshot-caption {
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--mid-grey);
+  border-top: 1px solid var(--border);
+  line-height: 1.55;
+}
+
 /* ── MOBILE TOP NAV ── */
 .mobile-nav {
   display: none;
@@ -468,6 +488,7 @@ nav a.active .icon { opacity: 1; }
   .page-header { padding: 28px 24px; }
   .page-header h1 { font-size: 26px; }
   .content { padding: 28px 24px; }
+  .app-preview { padding: 28px 24px 0; }
   .do-dont { grid-template-columns: 1fr; }
   .dont-col { border-top: 1px solid var(--border); }
   .gradient-grid { grid-template-columns: 1fr; }
