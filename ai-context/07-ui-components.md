@@ -11,15 +11,15 @@ PT Sans Bold 14px, 10px × 22px padding, 8px gap to icon, no border for primary,
 
 | Variant | Style | Use |
 | --- | --- | --- |
-| **Primary** | Background `#067A60` (Sage deep), white text | Main CTA. One per screen. |
-| **Secondary** | Transparent, `#067A60` 1.5px border + text | Supporting actions. |
+| **Primary** | Background `#007525` (Sage deep), white text | Main CTA. One per screen. |
+| **Secondary** | Transparent, `#007525` 1.5px border + text | Supporting actions. |
 | **Ghost** | Transparent, `#D8E8E2` 1px border, mid-grey text | Tertiary actions, settings, cancel. |
 
 Hover states:
 
-- Primary → background shifts to Sage mid `#0B9A78`.
-- Secondary → background fills with Sage tint `#E8F5F0`.
-- Ghost → border becomes Sage light `#7ACBB0`, text becomes Sage mid.
+- Primary → background shifts to Sage mid `#00942F`.
+- Secondary → background fills with Sage tint `#E8F7EC`.
+- Ghost → border becomes Sage light `#7AD992`, text becomes Sage mid.
 
 Buttons usually pair with a Lucide icon (16px, stroke 2) on the left of the
 label — e.g. `play` for *Start ride*, `bar-chart-3` for *View session*,
@@ -31,7 +31,7 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 
 | Variant | Background | Text | Use |
 | --- | --- | --- | --- |
-| Sage | `#D4EDE4` | `#034D3A` | Gait names, neutral categories |
+| Sage | `#C8EDD4` | `#004D18` | Gait names, neutral categories |
 | Purple | `#E8DDF5` | `#4A2080` | Secondary accents only |
 | Green | `#E6F4EA` | `#1b5e20` | Success states (e.g. *Session saved*) |
 | Amber | `#FFF3CD` | `#7a4a00` | Warnings (e.g. *Calibration needed*) |
@@ -48,7 +48,7 @@ across the ride. Reference: `images/Thruness-App-Screens.png`.
 
 - Halt `#9BA8A4` (light `#D4DBD8`, dark `#6E7A76`)
 - Walk `#5A9FC8` (light `#B8D9EC`, dark `#3A7FA8`)
-- Trot `#0B9A78` (light `#A8D9C8`, dark `#067A60`)
+- Trot `#00942F` (light `#9FDEB3`, dark `#007525`)
 - Canter `#D4923A` (light `#F0D4A8`, dark `#9E6218`)
 - Gallop `#6B4A9A` (light `#D4C8E8`, dark `#4A2080`)
 
@@ -68,7 +68,7 @@ Something shifted in that last canter.   (Heading 2 — Philosopher 20–26px)
 - Font: PT Sans 14px.
 - Padding: 10px × 14px.
 - Border: 1.5px solid `#D8E8E2`, radius 8px.
-- Focus: border becomes Sage mid `#0B9A78`.
+- Focus: border becomes Sage mid `#00942F`.
 - Background: white.
 - Max width: 280–340px in form layouts.
 - Labels: PT Sans Bold 12px, near black, 5px above the input.
@@ -98,9 +98,9 @@ We use [Lucide](https://lucide.dev) for all UI iconography.
 | --- | --- | --- |
 | Warm white | `#F5FAF8` | Default page and app background |
 | White | `#FFFFFF` | Cards, modals, input fields |
-| Sage tint | `#E8F5F0` | Callouts, selected states, highlights |
+| Sage tint | `#E8F7EC` | Callouts, selected states, highlights |
 | Near black | `#0F1F1A` | Sidebar, active ride screen, dark mode |
-| Hero gradient | `#12C49A → #034D3A` (135°) | Splash, app icon, marketing moments only |
+| Hero gradient | `#1DB954 → #004D18` (135°) | Splash, app icon, marketing moments only |
 
 ## Layout system
 
@@ -114,8 +114,8 @@ We use [Lucide](https://lucide.dev) for all UI iconography.
 
 Quote-style block for emphasis.
 
-- Background: Sage tint `#E8F5F0`.
-- Left border: 3px solid Sage mid `#0B9A78`.
+- Background: Sage tint `#E8F7EC`.
+- Left border: 3px solid Sage mid `#00942F`.
 - Padding: 18px × 22px.
 - Font: PT Sans Italic 15px, near black.
 - Border radius: 0 on the left edge, 8px on the right.

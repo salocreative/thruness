@@ -41,7 +41,7 @@ guidelines site is at <https://github.com/salocreative/thruness>.
 - **Voice in four words** — Honest. Quiet. Knowing. Reverent.
 - **Positioning statement** — *The app that listens while you ride.*
 - **Type pairing** — Philosopher (display, Regular only) + PT Sans (body).
-- **Core colours** — Sage deep `#067A60`, Sage mid `#0B9A78`, Near black
+- **Core colours** — Sage primary `#00942F`, Sage deep `#007525`, Near black
   `#0F1F1A`, Warm white `#F5FAF8`. Purple is secondary only.
 - **Icon library** — [Lucide](https://lucide.dev), stroke width 2.
 - **Language** — UK English always.

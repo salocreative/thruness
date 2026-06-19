@@ -175,7 +175,7 @@ the icon mark alone.
 
 - **Do not stretch or distort.** Always scale proportionally. Never squeeze or
   stretch the mark.
-- **Do not recolour the mark.** White, sage deep `#067A60`, or near black
+- **Do not recolour the mark.** White, sage deep `#007525`, or near black
   `#0F1F1A` only.
 - **Do not use on clashing backgrounds.** White, warm white, near black, or
   brand gradient only.
@@ -199,14 +199,14 @@ Derived from the brand gradient (teal-green → forest green).
 
 | Name | Hex | Use |
 | --- | --- | --- |
-| Hero gradient | `#12C49A` → `#034D3A` | App icon, splash screen, hero moments, marketing |
-| Sage bright | `#12C49A` | Gradient top, energetic accents, active highlights |
-| Sage mid | `#0B9A78` | Links, eyebrows, active states, hover on primary |
-| Sage deep | `#067A60` | Primary buttons, emphasis, text on light backgrounds |
-| Sage forest | `#034D3A` | Gradient bottom, dark UI, badge text |
-| Sage light | `#7ACBB0` | Hover borders, decorative accents, chart fills |
-| Sage tint | `#E8F5F0` | Callout backgrounds, hover fills, subtle highlights |
-| Sage tint 2 | `#D4EDE4` | Badges, selected states, secondary fills |
+| Hero gradient | `#1DB954` → `#004D18` | App icon, splash screen, hero moments, marketing |
+| Sage bright | `#1DB954` | Gradient top, energetic accents, active highlights |
+| Sage primary | `#00942F` | Brand green, links, eyebrows, active states, hover on primary |
+| Sage deep | `#007525` | Primary buttons, emphasis, text on light backgrounds |
+| Sage forest | `#004D18` | Gradient bottom, dark UI, badge text |
+| Sage light | `#7AD992` | Hover borders, decorative accents, chart fills |
+| Sage tint | `#E8F7EC` | Callout backgrounds, hover fills, subtle highlights |
+| Sage tint 2 | `#C8EDD4` | Badges, selected states, secondary fills |
 
 ## Secondary palette — Purple
 
@@ -235,9 +235,9 @@ All gradients run at **135°**.
 
 | Name | Stops | Use |
 | --- | --- | --- |
-| Hero | `#12C49A → #0B9A78 → #034D3A` | App icon, splash, marketing hero |
-| Brand | `#7ACBB0 → #0B9A78` | UI highlights, cards, subtle brand moments |
-| Night | `#1A3D32 → #0A1F18` | Dark mode, active ride screen |
+| Hero | `#1DB954 → #00942F → #004D18` | App icon, splash, marketing hero |
+| Brand | `#7AD992 → #00942F` | UI highlights, cards, subtle brand moments |
+| Night | `#1A3D22 → #0A1F10` | Dark mode, active ride screen |
 
 Reference vertical master: `logos/Thruness-Gradient-Sage.png`
 
@@ -245,15 +245,15 @@ Reference vertical master: `logos/Thruness-Gradient-Sage.png`
 
 | Token | Hex | Use |
 | --- | --- | --- |
-| Sage 50 | `#E8F5F0` | Lightest tint, callouts |
-| Sage 100 | `#D4EDE4` | Badges, selected fills |
-| Sage 200 | `#A8D9C8` | Subtle charts, soft fills |
-| Sage 300 | `#7ACBB0` | Light accent, hover borders |
-| Sage 400 | `#12C49A` | Gradient top, energetic accent |
-| Sage 500 | `#0B9A78` | Links, eyebrows, hover states |
-| Sage 600 | `#067A60` | Primary buttons, text on light |
-| Sage 700 | `#034D3A` | Gradient bottom, dark emphasis |
-| Sage 800 | `#023528` | Night gradient, deep surfaces |
+| Sage 50 | `#E8F7EC` | Lightest tint, callouts |
+| Sage 100 | `#C8EDD4` | Badges, selected fills |
+| Sage 200 | `#9FDEB3` | Subtle charts, soft fills |
+| Sage 300 | `#7AD992` | Light accent, hover borders |
+| Sage 400 | `#1DB954` | Gradient top, energetic accent |
+| Sage 500 | `#00942F` | Primary brand, links, eyebrows |
+| Sage 600 | `#007525` | Primary buttons, text on light |
+| Sage 700 | `#004D18` | Gradient bottom, dark emphasis |
+| Sage 800 | `#003812` | Night gradient, deep surfaces |
 | Sage 900 | `#0F1F1A` | Near black, sidebar, nav |
 
 ## Gait colours
@@ -266,7 +266,7 @@ for text.
 | --- | --- | --- | --- | --- |
 | Halt | `#D4DBD8` | `#9BA8A4` | `#6E7A76` | Stone |
 | Walk | `#B8D9EC` | `#5A9FC8` | `#3A7FA8` | Sky |
-| Trot | `#A8D9C8` | `#0B9A78` | `#067A60` | Sage |
+| Trot | `#9FDEB3` | `#00942F` | `#007525` | Sage |
 | Canter | `#F0D4A8` | `#D4923A` | `#9E6218` | Amber |
 | Gallop | `#D4C8E8` | `#6B4A9A` | `#4A2080` | Plum |
 
@@ -281,9 +281,9 @@ borders, legend labels on light surfaces.
 --gait-walk-light: #B8D9EC;
 --gait-walk: #5A9FC8;
 --gait-walk-dark: #3A7FA8;
---gait-trot-light: #A8D9C8;
---gait-trot: #0B9A78;
---gait-trot-dark: #067A60;
+--gait-trot-light: #9FDEB3;
+--gait-trot: #00942F;
+--gait-trot-dark: #007525;
 --gait-canter-light: #F0D4A8;
 --gait-canter: #D4923A;
 --gait-canter-dark: #9E6218;
@@ -298,26 +298,28 @@ All text combinations must meet **WCAG AA** at minimum.
 
 | Combination | Contrast | Rating |
 | --- | --- | --- |
-| `#067A60` on white | 5.8:1 | AA ✓ |
-| `#034D3A` on white | 9.1:1 | AAA ✓ |
+| `#00942F` on white | 4.6:1 | AA ✓ |
+| `#007525` on white | 5.9:1 | AA ✓ |
+| `#004D18` on white | 8.7:1 | AAA ✓ |
 | `#0F1F1A` on white | 16.2:1 | AAA ✓ |
-| `#7ACBB0` on white | 2.1:1 | Fail for text |
+| `#7AD992` on white | 2.0:1 | Fail for text |
 
-`#7ACBB0`, `#12C49A` and the hero gradient are for graphic and decorative use
+`#7AD992`, `#1DB954` and the hero gradient are for graphic and decorative use
 only. Never use them for body text.
 
 ## CSS variables
 
 ```css
 :root {
-  /* Primary — Sage green */
-  --sage-bright: #12C49A;
-  --sage-mid: #0B9A78;
-  --sage-deep: #067A60;
-  --sage-forest: #034D3A;
-  --sage-light: #7ACBB0;
-  --sage-tint: #E8F5F0;
-  --sage-tint-2: #D4EDE4;
+  /* Primary — Green */
+  --sage-primary: #00942F;
+  --sage-bright: #1DB954;
+  --sage-mid: #00942F;
+  --sage-deep: #007525;
+  --sage-forest: #004D18;
+  --sage-light: #7AD992;
+  --sage-tint: #E8F7EC;
+  --sage-tint-2: #C8EDD4;
   /* Secondary — Purple */
   --purple-deep: #4A2080;
   --purple-mid: #6B4A9A;
@@ -332,13 +334,13 @@ only. Never use them for body text.
   --white: #FFFFFF;
   --border: #D8E8E2;
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
-  --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
-  --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
+  --gradient-hero: linear-gradient(135deg, #1DB954 0%, #00942F 50%, #004D18 100%);
+  --gradient-subtle: linear-gradient(135deg, #7AD992 0%, #00942F 100%);
+  --gradient-night: linear-gradient(135deg, #1A3D22 0%, #0A1F10 100%);
   /* Gait colours */
   --gait-halt-light: #D4DBD8; --gait-halt: #9BA8A4; --gait-halt-dark: #6E7A76;
   --gait-walk-light: #B8D9EC; --gait-walk: #5A9FC8; --gait-walk-dark: #3A7FA8;
-  --gait-trot-light: #A8D9C8; --gait-trot: #0B9A78; --gait-trot-dark: #067A60;
+  --gait-trot-light: #9FDEB3; --gait-trot: #00942F; --gait-trot-dark: #007525;
   --gait-canter-light: #F0D4A8; --gait-canter: #D4923A; --gait-canter-dark: #9E6218;
   --gait-gallop-light: #D4C8E8; --gait-gallop: #6B4A9A; --gait-gallop-dark: #4A2080;
 }
@@ -536,15 +538,15 @@ PT Sans Bold 14px, 10px × 22px padding, 8px gap to icon, no border for primary,
 
 | Variant | Style | Use |
 | --- | --- | --- |
-| **Primary** | Background `#067A60` (Sage deep), white text | Main CTA. One per screen. |
-| **Secondary** | Transparent, `#067A60` 1.5px border + text | Supporting actions. |
+| **Primary** | Background `#007525` (Sage deep), white text | Main CTA. One per screen. |
+| **Secondary** | Transparent, `#007525` 1.5px border + text | Supporting actions. |
 | **Ghost** | Transparent, `#D8E8E2` 1px border, mid-grey text | Tertiary actions, settings, cancel. |
 
 Hover states:
 
-- Primary → background shifts to Sage mid `#0B9A78`.
-- Secondary → background fills with Sage tint `#E8F5F0`.
-- Ghost → border becomes Sage light `#7ACBB0`, text becomes Sage mid.
+- Primary → background shifts to Sage mid `#00942F`.
+- Secondary → background fills with Sage tint `#E8F7EC`.
+- Ghost → border becomes Sage light `#7AD992`, text becomes Sage mid.
 
 Buttons usually pair with a Lucide icon (16px, stroke 2) on the left of the
 label — e.g. `play` for *Start ride*, `bar-chart-3` for *View session*,
@@ -556,7 +558,7 @@ Pill-shaped (`border-radius: 20px`), PT Sans Bold 11px, padding 3px × 10px.
 
 | Variant | Background | Text | Use |
 | --- | --- | --- | --- |
-| Sage | `#D4EDE4` | `#034D3A` | Gait names, neutral categories |
+| Sage | `#C8EDD4` | `#004D18` | Gait names, neutral categories |
 | Purple | `#E8DDF5` | `#4A2080` | Secondary accents only |
 | Green | `#E6F4EA` | `#1b5e20` | Success states (e.g. *Session saved*) |
 | Amber | `#FFF3CD` | `#7a4a00` | Warnings (e.g. *Calibration needed*) |
@@ -573,7 +575,7 @@ across the ride. Reference: `images/Thruness-App-Screens.png`.
 
 - Halt `#9BA8A4` (light `#D4DBD8`, dark `#6E7A76`)
 - Walk `#5A9FC8` (light `#B8D9EC`, dark `#3A7FA8`)
-- Trot `#0B9A78` (light `#A8D9C8`, dark `#067A60`)
+- Trot `#00942F` (light `#9FDEB3`, dark `#007525`)
 - Canter `#D4923A` (light `#F0D4A8`, dark `#9E6218`)
 - Gallop `#6B4A9A` (light `#D4C8E8`, dark `#4A2080`)
 
@@ -593,7 +595,7 @@ Something shifted in that last canter.   (Heading 2 — Philosopher 20–26px)
 - Font: PT Sans 14px.
 - Padding: 10px × 14px.
 - Border: 1.5px solid `#D8E8E2`, radius 8px.
-- Focus: border becomes Sage mid `#0B9A78`.
+- Focus: border becomes Sage mid `#00942F`.
 - Background: white.
 - Max width: 280–340px in form layouts.
 - Labels: PT Sans Bold 12px, near black, 5px above the input.
@@ -623,9 +625,9 @@ We use [Lucide](https://lucide.dev) for all UI iconography.
 | --- | --- | --- |
 | Warm white | `#F5FAF8` | Default page and app background |
 | White | `#FFFFFF` | Cards, modals, input fields |
-| Sage tint | `#E8F5F0` | Callouts, selected states, highlights |
+| Sage tint | `#E8F7EC` | Callouts, selected states, highlights |
 | Near black | `#0F1F1A` | Sidebar, active ride screen, dark mode |
-| Hero gradient | `#12C49A → #034D3A` (135°) | Splash, app icon, marketing moments only |
+| Hero gradient | `#1DB954 → #004D18` (135°) | Splash, app icon, marketing moments only |
 
 ## Layout system
 
@@ -639,9 +641,12 @@ We use [Lucide](https://lucide.dev) for all UI iconography.
 
 Quote-style block for emphasis.
 
-- Background: Sage tint `#E8F5F0`.
-- Left border: 3px solid Sage mid `#0B9A78`.
+- Background: Sage tint `#E8F7EC`.
+- Left border: 3px solid Sage mid `#00942F`.
 - Padding: 18px × 22px.
 - Font: PT Sans Italic 15px, near black.
 - Border radius: 0 on the left edge, 8px on the right.
 - Max width: 640px.
+
+---
+

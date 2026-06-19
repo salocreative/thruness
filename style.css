@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-  /* Primary — Sage green */
-  --sage-bright: #12C49A;
-  --sage-mid: #0B9A78;
-  --sage-deep: #067A60;
-  --sage-forest: #034D3A;
-  --sage-light: #7ACBB0;
-  --sage-tint: #E8F5F0;
-  --sage-tint-2: #D4EDE4;
+  /* Primary — Green */
+  --sage-primary: #00942F;
+  --sage-bright: #1DB954;
+  --sage-mid: #00942F;
+  --sage-deep: #007525;
+  --sage-forest: #004D18;
+  --sage-light: #7AD992;
+  --sage-tint: #E8F7EC;
+  --sage-tint-2: #C8EDD4;
   /* Secondary — Purple (use sparingly) */
   --purple-deep: #4A2080;
   --purple-mid: #6B4A9A;
@@ -23,9 +24,9 @@
   --white: #FFFFFF;
   --border: #D8E8E2;
   /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #12C49A 0%, #0B9A78 50%, #034D3A 100%);
-  --gradient-subtle: linear-gradient(135deg, #7ACBB0 0%, #0B9A78 100%);
-  --gradient-night: linear-gradient(135deg, #1A3D32 0%, #0A1F18 100%);
+  --gradient-hero: linear-gradient(135deg, #1DB954 0%, #00942F 50%, #004D18 100%);
+  --gradient-subtle: linear-gradient(135deg, #7AD992 0%, #00942F 100%);
+  --gradient-night: linear-gradient(135deg, #1A3D22 0%, #0A1F10 100%);
   /* Gait colours — distinct hues for clear UI differentiation */
   --gait-halt-light: #D4DBD8;
   --gait-halt: #9BA8A4;
@@ -33,18 +34,18 @@
   --gait-walk-light: #B8D9EC;
   --gait-walk: #5A9FC8;
   --gait-walk-dark: #3A7FA8;
-  --gait-trot-light: #A8D9C8;
-  --gait-trot: #0B9A78;
-  --gait-trot-dark: #067A60;
+  --gait-trot-light: #9FDEB3;
+  --gait-trot: #00942F;
+  --gait-trot-dark: #007525;
   --gait-canter-light: #F0D4A8;
   --gait-canter: #D4923A;
   --gait-canter-dark: #9E6218;
   --gait-gallop-light: #D4C8E8;
   --gait-gallop: #6B4A9A;
   --gait-gallop-dark: #4A2080;
-  --shadow-sm: 0 1px 3px rgba(3,77,58,0.08);
-  --shadow-md: 0 4px 16px rgba(3,77,58,0.12);
-  --shadow-lg: 0 8px 32px rgba(3,77,58,0.16);
+  --shadow-sm: 0 1px 3px rgba(0,77,24,0.08);
+  --shadow-md: 0 4px 16px rgba(0,77,24,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,77,24,0.16);
   --radius: 12px;
   --radius-sm: 8px;
   --sidebar-width: 240px;
@@ -138,7 +139,7 @@ nav a:hover {
 nav a.active {
   color: var(--white);
   border-left-color: var(--sage-light);
-  background: rgba(18,196,154,0.12);
+  background: rgba(0,148,47,0.12);
 }
 
 nav a .icon { opacity: 0.7; font-size: 15px; width: 18px; text-align: center; }
